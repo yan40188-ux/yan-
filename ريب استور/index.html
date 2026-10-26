@@ -1,0 +1,1532 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#041a10">
+<meta name="description" content="مبادرة السعودية خط أحمر - مديرة مدرسة الجربة المتوسطة للبنات: وثيقة العهد، أصدّ الشائعات، وجدارية الوطن.">
+<meta property="og:title" content="السعودية خط أحمر - مدرسة الجربة المتوسطة للبنات">
+<meta property="og:description" content="مبادرة وطنية برعاية مديرة مدرسة الجربة المتوسطة للبنات لتعزيز الانتماء ومكافحة الشائعات">
+<title>السعودية خط أحمر | مدرسة الجربة المتوسطة للبنات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@400;500;700;800;900&family=Amiri:wght@400;700&display=swap">
+<style>
+:root{
+  --bg:#041a10;
+  --bg2:#072a1a;
+  --neon:#3dff8f;
+  --neon-soft:rgba(61,255,143,.35);
+  --red:#e3122f;
+  --red-hot:#ff3148;
+  --gold:#f2c24c;
+  --ink:#f3fbf5;
+  --ink-soft:rgba(243,251,245,.72);
+  --card:rgba(6,34,22,.85);
+  --paper-ink:#3a2412;
+  --f-display:"Lalezar","Tajawal",system-ui,sans-serif;
+  --f-body:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-script:"Aref Ruqaa","Amiri",serif;
+  --f-verse:"Amiri","Aref Ruqaa",serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{direction:rtl}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:16px;
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-tap-highlight-color:transparent;
+  background-image:radial-gradient(ellipse 120% 60% at 50% 0%,#0d4a2c 0%,transparent 60%),radial-gradient(ellipse 100% 50% at 50% 100%,#0a3a23 0%,transparent 60%);
+  background-attachment:fixed;
+}
+body.locked{overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:580px;margin-inline:auto}
+
+/* Emblem: map on red band */
+.emblem{position:relative;width:100%;display:grid;place-items:center}
+.band{position:absolute;left:0;right:0;top:54%;height:clamp(46px,14vw,74px);transform:translateY(-50%);overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;background:rgba(227,18,47,.14);border-block:1px solid rgba(255,49,72,.25)}
+.band i{position:absolute;inset:0;border-block:3px solid #3a0109;background:linear-gradient(180deg,#ff7a86 0%,#ff2f45 16%,#e3122f 48%,#b00a22 80%,#6a0413 100%);box-shadow:inset 0 4px 0 rgba(255,255,255,.35),inset 0 -6px 0 rgba(0,0,0,.35),0 0 34px rgba(255,49,72,.75),0 14px 24px rgba(0,0,0,.55);transform:scaleX(0);transform-origin:right center}
+.band.on i{animation:bandIn 1s cubic-bezier(.7,0,.2,1) forwards,bandGlow 2.6s ease-in-out 1s infinite}
+@keyframes bandIn{to{transform:scaleX(1)}}
+@keyframes bandGlow{50%{box-shadow:inset 0 4px 0 rgba(255,255,255,.35),inset 0 -6px 0 rgba(0,0,0,.35),0 0 54px rgba(255,49,72,1),0 0 100px rgba(255,49,72,.45),0 14px 24px rgba(0,0,0,.55)}}
+.band.static i{transform:scaleX(1)}
+.map{position:relative;width:min(64vw,300px);z-index:2;filter:drop-shadow(0 0 6px rgba(61,255,143,.9)) drop-shadow(0 0 22px rgba(61,255,143,.55)) drop-shadow(0 14px 18px rgba(0,0,0,.6))}
+.map svg{width:100%;height:auto;display:block;overflow:visible}
+.map.flare{animation:flare 1.2s ease}
+@keyframes flare{30%{filter:drop-shadow(0 0 12px #fff) drop-shadow(0 0 40px rgba(61,255,143,1)) drop-shadow(0 14px 18px rgba(0,0,0,.6))}}
+.map.breath{animation:breath 3.4s ease-in-out infinite}
+@keyframes breath{50%{filter:drop-shadow(0 0 9px rgba(61,255,143,1)) drop-shadow(0 0 32px rgba(61,255,143,.7)) drop-shadow(0 14px 18px rgba(0,0,0,.6))}}
+.slogan{
+  letter-spacing:.5px;
+  font-family:var(--f-display);
+  white-space:nowrap;
+  font-size:clamp(34px,11.5vw,68px);
+  line-height:1.05;
+  margin:0;
+  color:var(--red-hot);
+  text-shadow:2px 0 0 #12030a,-2px 0 0 #12030a,0 2px 0 #12030a,0 -2px 0 #12030a,3px 3px 6px rgba(0,0,0,.8),0 0 24px rgba(255,49,72,.6);
+  text-align:center;
+  padding:4px 12px;
+}
+.slogan.hide{clip-path:inset(0 0 0 100%)}
+.slogan.revealed{clip-path:none}
+.slogan.reveal{clip-path:inset(0 0 0 0);transition:clip-path 1.1s cubic-bezier(.3,.8,.2,1)}
+
+/* Intro Overlay */
+#intro{
+  position:fixed;
+  inset:0;
+  z-index:100;
+  overflow:hidden;
+  background:#0b3b22;
+  transition:opacity .8s ease,visibility .8s;
+  background-image:radial-gradient(ellipse at 50% 45%,#2f6a3c 0%,#1b4d2b 45%,#0a2c18 100%);
+}
+#intro::before{
+  content:"";
+  position:absolute;
+  inset:-50%;
+  opacity:.22;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='.6'/></svg>");
+  pointer-events:none;
+}
+#intro.gone{opacity:0;visibility:hidden}
+#intro .intro-in{gap:min(3vh,22px);overflow-y:auto}
+#intro .emblem{min-height:0!important}
+#intro .map{width:min(62vw,36vh,300px)}
+#intro .band{height:min(14vw,7.5vh,74px)}
+#intro .slogan{font-size:min(12vw,7vh,68px)}
+#intro .intro-after{gap:min(2vh,14px)}
+#intro .soldier-bg{position:absolute;inset:0;background:center 70%/cover no-repeat;opacity:0.4}
+#intro .soldier-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,45,26,.7) 0%,rgba(8,45,26,.2) 38%,rgba(0,0,0,0) 58%,rgba(5,30,18,.55) 82%,rgba(5,30,18,.9) 100%)}
+#intro.shake .intro-in{animation:shake .4s ease}
+.map.pre{opacity:0;transform:scale(.55)}
+.map.show{opacity:1;transform:none;transition:opacity .6s ease,transform .9s cubic-bezier(.2,1.5,.3,1)}
+#introBand i{transform-origin:center}
+.stamp{
+  position:fixed;
+  left:50%;
+  top:44%;
+  width:min(56vw,34vh,240px);
+  height:min(56vw,34vh,240px);
+  margin:calc(min(56vw,34vh,240px) / -2) 0 0 calc(min(56vw,34vh,240px) / -2);
+  border:0;
+  background:none;
+  padding:0;
+  z-index:5;
+  animation:hover 2.4s ease-in-out infinite;
+  filter:drop-shadow(0 20px 22px rgba(0,0,0,.6));
+}
+.stamp::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:2px solid rgba(255,49,72,.6);box-shadow:0 0 30px rgba(255,49,72,.55);animation:halo 1.6s ease-out infinite}
+@keyframes halo{from{transform:scale(.9);opacity:1}to{transform:scale(1.35);opacity:0}}
+.stamp img{width:100%;height:100%}
+.stamp svg{position:absolute;inset:0;width:100%;height:100%}
+@keyframes hover{50%{transform:translateY(-10px) rotate(-4deg)}}
+.stamp.slam{animation:slam .42s cubic-bezier(.7,0,.5,1) forwards}
+.stamp.slam::before{display:none}
+@keyframes slam{0%{transform:translateY(-10px) scale(1)}45%{transform:translateY(-30px) scale(1.12) rotate(-8deg)}100%{transform:translateY(0) scale(.94) rotate(-10deg)}}
+.stamp.gone{opacity:0;transform:scale(.9) rotate(-10deg);transition:opacity .7s ease .5s}
+.shock{position:absolute;left:50%;top:54%;width:60px;height:60px;margin:-30px;border-radius:50%;border:5px solid var(--red-hot);z-index:4;pointer-events:none;animation:ring .9s ease-out forwards}
+@keyframes ring{to{transform:scale(18);opacity:0}}
+.intro-in{position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(14px,3vh,26px);padding-top:calc(24px + env(safe-area-inset-top,0px));padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));text-align:center}
+.hint{font-size:15px;color:rgba(255,255,255,.9);margin-top:8px}
+.intro-after{display:flex;flex-direction:column;align-items:center;gap:14px;opacity:0;transform:translateY(16px);transition:.7s ease .2s;pointer-events:none}
+.intro-after.on{opacity:1;transform:none;pointer-events:auto}
+.skip{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));left:calc(14px + env(safe-area-inset-left,0px));background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:999px;padding:6px 14px;font-size:13px;z-index:3}
+.ahead{font-size:16px;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(61,255,143,.3);padding:8px 18px;border-radius:999px}
+.ahead b{color:var(--gold);font-variant-numeric:tabular-nums}
+
+.btn{border:0;border-radius:999px;padding:14px 30px;font-weight:800;font-size:17px;font-family:var(--f-body);display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;transition:all .2s ease;text-decoration:none}
+.btn-red{background:linear-gradient(180deg,#ff3a50,var(--red) 60%,#a90a22);color:#fff;box-shadow:0 0 0 1px rgba(255,120,130,.5) inset,0 10px 28px rgba(227,18,47,.5)}
+.btn-gold{background:linear-gradient(180deg,#ffd978,var(--gold));color:#2a1b05;box-shadow:0 10px 26px rgba(242,194,76,.35)}
+.btn-ghost{background:rgba(61,255,143,.08);color:var(--ink);border:1.5px solid var(--neon-soft)}
+.btn:active{transform:scale(.97)}
+
+/* Sticky mini */
+.mini{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;background:rgba(4,26,16,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--neon-soft);box-shadow:0 6px 24px rgba(0,0,0,.4);transform:translateY(-110%);transition:transform .35s ease}
+.mini.show{transform:none}
+.mini .wrap{display:flex;align-items:center;gap:10px;padding-block:8px}
+.mini-mark{position:relative;width:46px;height:30px;flex:none;display:grid;place-items:center}
+.mini-mark::before{content:"";position:absolute;left:0;right:0;top:54%;height:8px;transform:translateY(-50%);background:var(--red);box-shadow:0 0 8px var(--red-hot)}
+.mini-mark svg{position:relative;width:30px;height:auto;filter:drop-shadow(0 0 3px var(--neon))}
+.mini-t{font-family:var(--f-display);font-size:18px;color:var(--red-hot);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini-c{display:flex;gap:10px;font-size:13px;font-weight:800;font-variant-numeric:tabular-nums;color:#fff}
+.icon-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--neon-soft);background:rgba(61,255,143,.08);color:#fff;display:grid;place-items:center;flex:none}
+.icon-btn svg{width:18px;height:18px}
+
+/* Banner */
+.banner{position:relative;padding-bottom:10px}
+.bhero{position:relative;height:min(82vw,350px);background:#0a2a18 center 72%/cover no-repeat;display:flex;flex-direction:column;justify-content:space-between;padding-top:calc(20px + env(safe-area-inset-top,0px));padding-bottom:6px;margin-bottom:12px}
+.bhero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,26,16,.6) 0%,rgba(4,26,16,.05) 34%,rgba(4,26,16,0) 62%,rgba(4,26,16,.7) 86%,var(--bg) 100%);pointer-events:none}
+.bhero>*{position:relative}
+.banner .emblem{margin-bottom:6px}
+.banner .map{width:min(38vw,170px)}
+.banner .band{height:clamp(34px,10vw,52px)}
+.banner .slogan{font-size:clamp(30px,9.5vw,52px)}
+.banner .wrap{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+
+.school{display:flex;flex-direction:column;align-items:center;gap:4px}
+.school .sn{font-family:var(--f-display);font-weight:700;font-size:24px;color:#fff;letter-spacing:.5px;text-shadow:0 0 16px rgba(61,255,143,.4)}
+.school .subtag{display:inline-flex;align-items:center;gap:6px;background:rgba(61,255,143,.1);border:1px solid var(--neon-soft);color:#c4ffd9;padding:4px 14px;border-radius:999px;font-size:12.5px;font-weight:700}
+.people{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;width:100%}
+.person{background:rgba(61,255,143,.06);border:1px solid var(--neon-soft);border-radius:14px;padding:8px 16px;font-size:13.5px;line-height:1.45;color:var(--ink-soft);flex:1;min-width:200px;max-width:280px;text-align:center}
+.person span{color:var(--neon);font-size:12px;display:block;font-weight:700}
+.person b{display:block;color:#fff;font-size:16px;font-weight:800;margin-top:2px}
+
+.counters{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%}
+.ctr{position:relative;background:linear-gradient(180deg,rgba(13,74,44,.7),rgba(5,30,19,.85));border:1.5px solid var(--neon-soft);border-radius:18px;padding:12px 6px 10px;display:flex;flex-direction:column;align-items:center;gap:2px;box-shadow:inset 0 0 22px rgba(61,255,143,.08)}
+.ctr .n{font-family:var(--f-display);font-size:32px;line-height:1;color:#fff;font-variant-numeric:tabular-nums;text-shadow:0 0 12px rgba(61,255,143,.5)}
+.ctr .l{font-size:13px;color:var(--ink-soft);font-weight:700}
+.ctr .ic{font-size:20px;line-height:1}
+.ctr.bump{animation:bump .6s ease}
+@keyframes bump{40%{transform:scale(1.08);border-color:var(--red-hot);box-shadow:0 0 24px rgba(255,49,72,.6)}}
+
+.ticker{width:100%;overflow:hidden;border-radius:999px;background:rgba(227,18,47,.14);border:1px solid rgba(255,49,72,.4);height:38px;position:relative;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.ticker-in{position:absolute;top:0;right:0;display:flex;gap:30px;white-space:nowrap;line-height:38px;font-size:14px;font-weight:700;color:#fff;animation:tick 36s linear infinite}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(50%)}}
+.lead{font-size:18px;color:#fff;margin:2px 0 0;font-weight:700}
+.lead b{color:var(--gold);font-variant-numeric:tabular-nums}
+
+/* Hub & Missions */
+.hub{padding-block:6px 40px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rect{position:relative;overflow:hidden;min-height:118px;border-radius:22px;border:1.5px solid var(--neon-soft);padding:14px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:2px;text-align:right;color:#fff;font-family:inherit;background:#0a2a18 center/cover no-repeat;box-shadow:0 0 24px rgba(61,255,143,.12),0 14px 28px rgba(0,0,0,.4)}
+.rect::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,26,16,.15),rgba(4,26,16,.9) 75%)}
+.rect>*{position:relative}
+.rect .ic{font-size:26px;line-height:1;margin-bottom:auto}
+.rect b{font-family:var(--f-display);font-weight:400;font-size:22px;line-height:1.1}
+.rect small{font-size:12.5px;color:var(--ink-soft);font-weight:700}
+.rect .ok{position:absolute;top:12px;left:12px;width:28px;height:28px;border-radius:50%;display:none;place-items:center;background:var(--neon);color:#05301a;font-weight:900;box-shadow:0 0 14px var(--neon)}
+.rect.done{border-color:var(--neon);box-shadow:0 0 22px rgba(61,255,143,.45),0 14px 28px rgba(0,0,0,.4)}
+.rect.done .ok{display:grid}
+
+/* Mission cards */
+.mission{position:relative;border-radius:36px;border:1.5px solid var(--neon-soft);background:var(--card);overflow:hidden;box-shadow:0 0 0 1px rgba(61,255,143,.08),0 0 40px rgba(61,255,143,.12),0 24px 50px rgba(0,0,0,.45);
+  background-image:linear-gradient(rgba(61,255,143,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(61,255,143,.06) 1px,transparent 1px),radial-gradient(ellipse 90% 55% at 50% 38%,rgba(40,140,90,.35),transparent 70%);background-size:30px 30px,30px 30px,100% 100%}
+.mission .backdrop{position:absolute;inset:0 0 auto;height:440px;background:center/cover no-repeat;opacity:.22;mask-image:linear-gradient(180deg,#000 30%,transparent);-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent);pointer-events:none}
+.mission-in{position:relative;display:flex;flex-direction:column;gap:16px;padding:22px 20px 26px}
+.corner-deco{position:absolute;top:18px;left:18px;width:64px;height:40px;border-top:3px solid var(--gold);border-left:3px solid var(--gold);border-radius:12px 0 0 0;opacity:.85;z-index:1}
+.pill{align-self:center;display:inline-flex;align-items:center;gap:8px;padding:7px 18px;border-radius:999px;border:1.5px solid var(--neon-soft);background:rgba(61,255,143,.06);font-weight:800;font-size:14px;color:#bfffd8}
+.pill::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--neon);box-shadow:0 0 8px var(--neon)}
+.title{font-family:var(--f-display);font-weight:400;font-size:clamp(40px,12vw,58px);line-height:1.05;margin:0;text-align:center;color:#fff;text-shadow:0 0 22px rgba(255,255,255,.25),0 6px 18px rgba(0,0,0,.5)}
+.title .r{color:var(--red-hot);text-shadow:0 0 20px rgba(255,49,72,.6),0 6px 18px rgba(0,0,0,.5)}
+.title .g{color:var(--gold);text-shadow:0 0 20px rgba(242,194,76,.45),0 6px 18px rgba(0,0,0,.5)}
+.say{font-size:19px;line-height:1.75;text-align:center;margin:0;color:var(--ink);font-weight:500;min-height:3.5em}
+.say .caret{display:inline-block;width:3px;height:1.1em;background:var(--red-hot);vertical-align:middle;margin-inline-start:4px;animation:blink 1s steps(1) infinite;box-shadow:0 0 8px var(--red-hot)}
+@keyframes blink{50%{opacity:0}}
+.say em{font-style:normal;color:#ff6b7c;font-weight:800}
+
+/* Mission list beside character */
+.side{display:grid;grid-template-columns:minmax(0,1fr) 44%;align-items:center;gap:8px;width:100%}
+.mlist{display:flex;flex-direction:column;gap:10px;min-width:0}
+.mrect{position:relative;display:flex;align-items:center;gap:7px;padding-inline:9px!important;width:100%;border-radius:18px;border:1.5px solid var(--neon-soft);background:linear-gradient(180deg,rgba(13,74,44,.55),rgba(5,30,19,.92));color:#fff;font-family:inherit;padding:11px 12px;text-align:right;transition:.3s}
+.mrect .mk{width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;font-weight:900;font-size:15px;background:rgba(255,255,255,.12)}
+.mrect .mt{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+.mrect small{font-size:12px;font-weight:800;color:#bfffd8}
+.mrect b{font-family:var(--f-display);font-weight:400;font-size:clamp(16px,4.6vw,20px);margin-top:3px;line-height:1.2}
+.mrect.up{opacity:.65}
+.mrect.cur{border:2px solid var(--red-hot);background:linear-gradient(180deg,rgba(140,10,30,.6),rgba(40,6,12,.92));animation:redGlow 1.6s ease-in-out infinite}
+.mrect.cur small{color:#ffc2c9}
+@keyframes redGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,49,72,.5),0 0 22px rgba(255,49,72,.5)}50%{box-shadow:0 0 0 7px rgba(255,49,72,0),0 0 44px rgba(255,49,72,.95)}}
+.mrect.cur .mk{background:#fff;color:var(--red);box-shadow:0 0 12px rgba(255,255,255,.6)}
+.mrect.done{border-color:var(--neon);background:linear-gradient(180deg,rgba(18,120,62,.85),rgba(8,60,32,.95))}
+.mrect.done .mk{background:var(--neon);color:#05301a;box-shadow:0 0 12px var(--neon)}
+
+.side-char{position:relative;height:clamp(250px,70vw,320px)}
+.side-char .who-img{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:86.2%;height:auto;max-width:none;z-index:2;filter:drop-shadow(0 12px 18px rgba(0,0,0,.5))}
+.side-char .ring{position:absolute;bottom:7px;left:50%;transform:translateX(-50%);width:116%;height:54px;border-radius:50%;border:2.5px solid var(--neon);box-shadow:0 0 14px var(--neon),inset 0 0 12px rgba(61,255,143,.6);z-index:1;background:radial-gradient(ellipse at center,rgba(61,255,143,.35),rgba(61,255,143,.08) 60%,transparent 72%)}
+.side-char .ring.ring-f{z-index:4!important;background:none!important;clip-path:inset(50% -40px -40px -40px)}
+.side-char .beam{position:absolute;inset:auto 0 30px;height:80%;background:radial-gradient(ellipse at 50% 100%,rgba(61,255,143,.3),transparent 65%)}
+.side-char .cut{left:-8%;right:-8%;position:absolute;top:0;bottom:0;z-index:2;pointer-events:none;-webkit-mask:linear-gradient(#000,#000) top/100% calc(100% - 34px) no-repeat,radial-gradient(ellipse 50% 27px at 50% calc(100% - 34px),#000 98%,transparent 100%);mask:linear-gradient(#000,#000) top/100% calc(100% - 34px) no-repeat,radial-gradient(ellipse 50% 27px at 50% calc(100% - 34px),#000 98%,transparent 100%)}
+
+/* Hero in screens */
+.hero{position:relative;height:clamp(300px,85vw,390px);margin-inline:-20px;margin-top:-6px}
+.hero .who-img{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);height:calc(100% - 30px);width:auto;max-width:none;z-index:2;filter:drop-shadow(0 12px 20px rgba(0,0,0,.5))}
+.hero .ring{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:84%;height:60px;border-radius:50%;border:2.5px solid var(--neon);box-shadow:0 0 14px var(--neon),inset 0 0 14px rgba(61,255,143,.6),0 0 50px rgba(61,255,143,.35);z-index:1;background:radial-gradient(ellipse at center,rgba(61,255,143,.35),rgba(61,255,143,.08) 60%,transparent 72%)}
+.hero .ring.ring-f{z-index:4!important;background:none!important;clip-path:inset(50% -40px -40px -40px)}
+.hero .beam{position:absolute;left:50%;bottom:52px;width:70%;height:70%;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 100%,rgba(61,255,143,.28),transparent 65%);z-index:1}
+.hero .cut{left:8%;right:8%;position:absolute;top:0;bottom:0;z-index:2;pointer-events:none;-webkit-mask:linear-gradient(#000,#000) top/100% calc(100% - 52px) no-repeat,radial-gradient(ellipse 50% 30px at 50% calc(100% - 52px),#000 98%,transparent 100%);mask:linear-gradient(#000,#000) top/100% calc(100% - 52px) no-repeat,radial-gradient(ellipse 50% 30px at 50% calc(100% - 52px),#000 98%,transparent 100%)}
+
+/* Floating chips */
+.chip{position:absolute;z-index:4;display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:18px;background:rgba(5,30,19,.9);border:1.5px solid var(--neon-soft);font-weight:800;font-size:14px;color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.4);white-space:nowrap;animation:float 5s ease-in-out infinite;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.chip .i{font-size:18px;line-height:1}
+.chip.gold{border-color:rgba(242,194,76,.7);box-shadow:0 0 16px rgba(242,194,76,.25),0 8px 22px rgba(0,0,0,.4)}
+.chip.red{border-color:rgba(255,49,72,.75);box-shadow:0 0 16px rgba(255,49,72,.3),0 8px 22px rgba(0,0,0,.4)}
+.chip.rum{white-space:normal;max-width:38%;font-size:12.5px;padding:7px 10px;line-height:1.4;border-radius:16px 16px 16px 4px;background:rgba(233,241,255,.94);color:#16213d;border-color:rgba(255,255,255,.6)}
+.chip.rum:nth-of-type(even){border-radius:16px 16px 4px 16px;background:rgba(220,250,228,.95)}
+.chip.rum small{display:block;font-size:11px;font-weight:600;opacity:.65}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.chip.pop{animation:pop .5s ease-in forwards}
+@keyframes pop{30%{transform:scale(1.15)}100%{transform:scale(.2) rotate(18deg);opacity:0;filter:blur(4px)}}
+.shard{position:absolute;width:8px;height:8px;border-radius:2px;pointer-events:none;z-index:6;animation:shard .8s ease-out forwards}
+@keyframes shard{to{transform:translate(var(--dx),var(--dy)) rotate(var(--rot));opacity:0}}
+
+/* Screens */
+.screen{position:fixed;inset:0;z-index:85;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;background:var(--bg);background-image:radial-gradient(ellipse 120% 60% at 50% 0%,#0d4a2c 0%,transparent 60%);transform:translateX(-100%);visibility:hidden;transition:transform .45s cubic-bezier(.2,.8,.2,1),visibility 0s .45s}
+.screen.open{transform:none;visibility:visible;transition:transform .45s cubic-bezier(.2,.8,.2,1),visibility 0s}
+.scr-head{position:sticky;top:0;z-index:6;display:flex;align-items:center;gap:12px;padding:calc(10px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));background:rgba(4,26,16,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--neon-soft)}
+.scr-head b{font-family:var(--f-display);font-weight:400;font-size:22px;flex:1;color:#fff}
+.back{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--neon-soft);background:rgba(61,255,143,.08);color:#fff;font-size:22px;display:grid;place-items:center;flex:none}
+.scr-mark{width:30px;height:30px;border-radius:50%;display:none;place-items:center;background:var(--neon);color:#05301a;font-weight:900;box-shadow:0 0 12px var(--neon)}
+.screen.done .scr-mark{display:grid}
+.screen.done .scr-mark::before{content:"✓"}
+.scr-body{padding-block:18px 40px;display:flex;flex-direction:column;gap:16px}
+.close-in{padding-bottom:calc(40px + env(safe-area-inset-bottom,0px))}
+
+/* Form Elements */
+.form{display:flex;flex-direction:column;gap:12px}
+.lbl{font-weight:800;font-size:15px;color:#d7ffe6}
+.inp{width:100%;font:inherit;font-size:17px;padding:14px 16px;border-radius:16px;border:1.5px solid var(--neon-soft);background:rgba(0,0,0,.25);color:#fff}
+.inp::placeholder{color:rgba(255,255,255,.45)}
+.inp:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(61,255,143,.2)}
+textarea.inp{min-height:120px;resize:vertical;line-height:1.6}
+.err{color:#ff6b7c;font-size:14px;font-weight:800;min-height:1em}
+.note{font-size:13px;text-align:center;color:var(--ink-soft);margin:0}
+
+/* Parchment / Pledge scroll */
+.doc{position:relative;width:100%;max-width:340px;margin-inline:auto;filter:drop-shadow(0 18px 26px rgba(0,0,0,.55))}
+.doc[hidden]{display:none!important}
+.doc-mid{background:url(assets/scroll-mid.webp) center/100% 100% no-repeat;margin-inline:3%;padding:10px 9% 20px;color:var(--paper-ink);display:flex;flex-direction:column;gap:6px;overflow:hidden;max-height:0;transition:max-height 1.6s cubic-bezier(.4,.1,.2,1)}
+.doc.open .doc-mid{max-height:1600px}
+.doc-roll{position:relative;z-index:2}
+.doc-title{font-family:var(--f-script);font-weight:700;font-size:27px;text-align:center;line-height:1.2;margin:0;color:#5a1a0f}
+.doc-sub{font-family:var(--f-display);text-align:center;color:var(--red);font-size:19px;margin:-4px 0 4px}
+.doc-sub::after{content:"";display:block;height:5px;width:60%;margin:4px auto 0;background:linear-gradient(180deg,#ff4a5d,#b00a22);border-radius:2px}
+.doc-line{font-family:var(--f-verse);font-size:16px;line-height:1.75;opacity:0;transform:translateY(6px);transition:.5s ease}
+.doc-line.on{opacity:1;transform:none}
+.doc-para{font-family:var(--f-verse);font-size:15px;line-height:1.95;text-align:justify;text-align-last:right;direction:rtl}
+.doc-para b{color:#5a1a0f}
+.doc-verse{font-family:var(--f-verse);text-align:center;font-size:17px;color:#5a1a0f;font-weight:700}
+.sig{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px}
+.seal-slot{position:relative;flex:none;width:clamp(112px,33vw,132px);min-height:92px;display:grid;place-items:center}
+.seal-slot .seal{position:absolute;left:50%;top:50%;margin:-50px 0 0 -50px}
+.swear{position:relative;width:100%;border:0;border-radius:16px;padding:10px 6px 9px;background:linear-gradient(180deg,#ff3a50,#c8102e 60%,#94081c);color:#fff;font-family:inherit;display:flex;flex-direction:column;align-items:center;gap:3px;line-height:1.1;box-shadow:0 8px 18px rgba(200,16,46,.45);animation:swearPulse 1.6s ease-in-out infinite}
+.swear b{font-family:var(--f-display);font-weight:400;font-size:clamp(20px,6.5vw,25px);text-shadow:0 2px 0 rgba(0,0,0,.35)}
+.swear small{font-size:11.5px;font-weight:800;opacity:.95}
+.swear::before{content:"";position:absolute;inset:-8px;pointer-events:none;background:linear-gradient(90deg,#b00a22 55%,transparent 0) repeat-x 0 0/16px 3px,linear-gradient(90deg,#b00a22 55%,transparent 0) repeat-x 0 100%/16px 3px,linear-gradient(0deg,#b00a22 55%,transparent 0) repeat-y 0 0/3px 16px,linear-gradient(0deg,#b00a22 55%,transparent 0) repeat-y 100% 0/3px 16px;animation:ants .6s linear infinite}
+@keyframes ants{to{background-position:16px 0,-16px 100%,0 -16px,100% 16px}}
+@keyframes swearPulse{50%{transform:scale(1.04)}}
+.sig-box{flex:1;min-width:0}
+.sig-lbl{font-size:12px;font-family:var(--f-body);color:#7a5a3a}
+.sig-name{font-family:var(--f-script);font-size:22px;line-height:1.35;color:#1f2f6b;border-bottom:1.5px dashed #9b7b55;min-height:36px;overflow-wrap:anywhere}
+.sig-meta{font-size:11px;color:#7a5a3a;font-family:var(--f-body);line-height:1.5}
+.seal{position:relative;width:100px;height:100px;flex:none;opacity:0;pointer-events:none;transform:scale(2.6) rotate(-25deg)}
+.seal img{width:100%;height:100%}
+.seal svg{position:absolute;inset:0;width:100%;height:100%}
+.seal.on{animation:stamp .55s cubic-bezier(.5,0,.3,1.4) forwards}
+@keyframes stamp{60%{opacity:1;transform:scale(.88) rotate(-8deg)}100%{opacity:1;transform:scale(1) rotate(-10deg)}}
+.shake{animation:shake .4s ease}
+@keyframes shake{20%{transform:translate(-4px,2px)}40%{transform:translate(4px,-2px)}60%{transform:translate(-3px,1px)}80%{transform:translate(2px,0)}}
+
+/* Rumors */
+.block-btn{align-self:center;position:relative;border:2px solid #ff7a88;border-radius:22px;background:linear-gradient(180deg,#ff3a50,#b00a22);color:#fff;font-family:var(--f-display);font-size:28px;padding:14px 30px;box-shadow:0 0 0 6px rgba(255,49,72,.16),0 0 40px rgba(255,49,72,.75);animation:glow 1.8s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 0 11px rgba(255,49,72,.1),0 0 60px rgba(255,49,72,1)}}
+.wave{position:absolute;left:50%;top:50%;width:40px;height:40px;margin:-20px;border-radius:50%;border:4px solid var(--red-hot);animation:ring .9s ease-out forwards;pointer-events:none}
+.rules{display:none;flex-direction:column;gap:12px}
+.rules.on{display:flex;animation:sheet .6s cubic-bezier(.2,.9,.2,1)}
+@keyframes sheet{from{transform:translateY(50px);opacity:0}}
+.cards{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.cards::-webkit-scrollbar{display:none}
+.rcard{flex:0 0 100%;scroll-snap-align:center;min-height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:24px 18px;border-radius:24px;border:1.5px solid rgba(255,49,72,.5);background:linear-gradient(180deg,rgba(80,6,18,.55),rgba(5,30,19,.9));box-shadow:inset 0 0 30px rgba(255,49,72,.12)}
+.rcard .em{font-size:48px;line-height:1}
+.rcard h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:32px;color:var(--red-hot);text-shadow:0 0 14px rgba(255,49,72,.5)}
+.rcard p{margin:0;font-size:18px;line-height:1.7;color:#fff}
+.rcard.final{border-color:var(--neon-soft);background:linear-gradient(180deg,rgba(13,74,44,.7),rgba(5,30,19,.9))}
+.rcard.final h3{color:#fff}
+.dots{display:flex;justify-content:center;gap:7px}
+.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);transition:.3s}
+.dots i.on{width:24px;border-radius:8px;background:var(--red-hot);box-shadow:0 0 8px var(--red-hot)}
+.swipe-hint{text-align:center;font-size:13px;color:var(--ink-soft)}
+
+/* Share & Form */
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pickbtn{border:2px solid var(--neon-soft);background:rgba(61,255,143,.05);color:#fff;border-radius:20px;padding:16px 8px;display:flex;flex-direction:column;align-items:center;gap:4px;font-weight:900;font-size:17px}
+.pickbtn .em{font-size:34px;line-height:1}
+.pickbtn[aria-pressed="true"]{border-color:var(--red-hot);background:rgba(227,18,47,.18);box-shadow:0 0 0 3px rgba(255,49,72,.25),0 0 24px rgba(255,49,72,.35)}
+.pick{border:2px dashed var(--neon-soft);border-radius:18px;padding:18px;text-align:center;color:var(--ink-soft);background:rgba(0,0,0,.2);display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer}
+.pick img{max-height:220px;border-radius:12px}
+.toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:translate(-50%,160%);background:#06261a;border:1.5px solid var(--neon);color:#fff;font-weight:800;padding:12px 18px;border-radius:16px;z-index:90;transition:transform .4s ease;max-width:calc(100% - 32px);text-align:center;box-shadow:0 0 20px rgba(61,255,143,.35)}
+.toast.on{transform:translate(-50%,0)}
+
+/* Wall */
+.wall{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{border:0;padding:0;text-align:right;background:#fff;color:#1b1f33;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 0 0 1.5px rgba(61,255,143,.35),0 12px 26px rgba(0,0,0,.45);font-family:inherit}
+.tile .media{aspect-ratio:4/5;width:100%;max-width:100%;background:#0a2a1a center/cover no-repeat;position:relative}
+.tile .msg{aspect-ratio:4/5;width:100%;max-width:100%;padding:16px 14px;background:linear-gradient(180deg,#fffaf0,#f3e6c8);display:flex;flex-direction:column;gap:8px;position:relative}
+.tile .msg::before{content:"";height:5px;width:46px;background:var(--red);border-radius:3px}
+.tile .msg q{font-family:var(--f-verse);font-size:15px;line-height:1.65;quotes:none;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden;color:#2b1d10}
+.tile .who{padding:8px 12px 10px;display:flex;flex-direction:column;line-height:1.35;border-top:4px solid var(--red)}
+.tile .who b{font-size:14.5px}
+.tile .who span{font-size:12px;color:#5d6475}
+.badge{position:absolute;top:8px;right:8px;background:var(--red);color:#fff;font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px}
+.badge.wait{background:#a26b00}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:95;background:rgba(2,12,7,.95);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:calc(20px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb[hidden]{display:none!important}
+.lb-body{width:100%;max-width:520px;display:flex;flex-direction:column;gap:12px;align-items:center}
+.lb-body img{max-height:60vh;border-radius:16px;object-fit:contain}
+.lb-msg{background:linear-gradient(180deg,#fffaf0,#f1e2bf);color:#2b1d10;border-radius:20px;padding:24px 20px;font-family:var(--f-verse);font-size:20px;line-height:1.8;width:100%;border-top:6px solid var(--red)}
+.lb-who{text-align:center;color:#fff}
+.lb-who b{display:block;font-size:19px}
+.lb-who span{font-size:14px;color:var(--ink-soft)}
+.lb-cap{color:#fff;text-align:center;font-size:16px}
+.lb-nav{display:flex;gap:14px;align-items:center}
+.lb-close{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));left:calc(14px + env(safe-area-inset-left,0px))}
+.lb-count{color:var(--ink-soft);font-size:14px;font-variant-numeric:tabular-nums}
+
+/* Next Step Transition Modal */
+.next{position:fixed;inset:0;z-index:88;overflow-y:auto;background:var(--bg);background-image:radial-gradient(ellipse 110% 55% at 50% 60%,#11603a 0%,transparent 65%);display:block;animation:nextIn .5s ease}
+.next-top{position:relative;height:min(64vw,270px);background:#0a2a18 center 70%/cover no-repeat;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:2px;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:4px}
+.next-top::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,26,16,.5) 0%,rgba(4,26,16,0) 35%,rgba(4,26,16,.35) 70%,var(--bg) 100%)}
+.next-top>*{position:relative}
+.next-top .map{width:min(34vw,150px)}
+.next-top .band{height:clamp(28px,8.5vw,42px)}
+.next-top .slogan{font-size:clamp(28px,9vw,46px)}
+@keyframes nextIn{from{opacity:0;transform:scale(1.04)}}
+.next-in{width:100%;display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:calc(18px + env(safe-area-inset-top,0px));padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+.say-bubble{position:relative;align-self:stretch;margin-inline:6%;background:#fff;color:#14251b;font-weight:800;font-size:17px;line-height:1.6;padding:14px 16px;border-radius:22px;text-align:center;box-shadow:0 0 0 3px rgba(61,255,143,.35),0 12px 26px rgba(0,0,0,.45);min-height:3.6em}
+.say-bubble::after{content:"";position:absolute;bottom:-12px;left:50%;margin-left:-12px;border:12px solid transparent;border-top-color:#fff;border-bottom:0}
+.say-bubble em{font-style:normal;color:#c8102e}
+.next-home{background:none;border:0;color:var(--ink-soft);font-family:inherit;font-size:15px;font-weight:700;padding:12px;text-decoration:underline;text-underline-offset:4px}
+
+/* My Doc Output Section */
+.mine{display:flex;flex-direction:column;gap:14px;align-items:center}
+.mine-row{display:flex;gap:16px;justify-content:center;align-items:flex-start;flex-wrap:wrap;width:100%}
+.mine-col{display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;min-width:260px}
+.mine img{border-radius:14px;box-shadow:0 0 0 1.5px rgba(61,255,143,.35),0 14px 30px rgba(0,0,0,.5);background:#0a2a1a;width:100%;max-width:320px}
+.dl-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;font-weight:800;font-size:14.5px;background:linear-gradient(180deg,#ffd978,var(--gold));color:#2a1b05;text-decoration:none;box-shadow:0 6px 18px rgba(242,194,76,.3)}
+.done-note{text-align:center;font-weight:900;color:var(--gold);font-size:20px;margin:0}
+
+/* Closing */
+.close{padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+.soldiers{border-radius:24px;overflow:hidden;position:relative;aspect-ratio:16/10;max-width:100%;background:center 40%/cover no-repeat;box-shadow:0 0 0 1.5px rgba(242,194,76,.5),0 14px 30px rgba(0,0,0,.45)}
+.soldiers::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.85))}
+.soldiers p{position:absolute;bottom:14px;right:16px;left:16px;margin:0;z-index:1;color:#fff;font-weight:900;font-size:18px;text-shadow:0 2px 8px #000;text-align:center}
+.verse{font-family:var(--f-verse);font-size:26px;text-align:center;color:#fff;text-shadow:0 0 18px rgba(61,255,143,.35);margin:0}
+.final-count{text-align:center;color:#fff;font-size:18px;font-weight:700}
+.final-count b{font-family:var(--f-display);font-size:52px;color:var(--gold);display:block;line-height:1.1;font-weight:400;font-variant-numeric:tabular-nums;text-shadow:0 0 18px rgba(242,194,76,.5)}
+.foot{text-align:center;font-size:13.5px;color:var(--ink-soft);line-height:1.7}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .band i{transform:scaleX(1)}
+  .slogan.hide{clip-path:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== INTRO ===================== -->
+<div id="intro" role="dialog" aria-label="فعّلي الخط الأحمر">
+  <div class="soldier-bg" id="introSoldiers"></div>
+  <button class="skip" id="skip" type="button">تخطي</button>
+  <div class="intro-in">
+    <div class="emblem" id="introEmblem" style="min-height:min(56vw,250px)">
+      <div class="band" id="introBand"><i></i></div>
+      <div class="map pre" id="introMap"></div>
+      <button class="stamp" id="stampBtn" type="button" aria-label="اختمي لتفعيل الخط الأحمر">
+        <img src="assets/seal.webp" alt="ختم الولاء">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <defs><path id="sealArc2" d="M50,50 m-31,0 a31,31 0 1,1 62,0 a31,31 0 1,1 -62,0"/></defs>
+          <circle cx="50" cy="50" r="23" fill="none" stroke="rgba(255,225,215,.55)" stroke-width="1"/>
+          <text font-family="Lalezar, sans-serif" font-size="10.5" fill="rgba(255,232,224,.92)"><textPath href="#sealArc2">السعودية خط أحمر ✦ السعودية خط أحمر ✦</textPath></text>
+          <rect x="30" y="47" width="40" height="6" rx="1.5" fill="rgba(255,232,224,.9)"/>
+          <text x="50" y="42" text-anchor="middle" font-family="Lalezar, sans-serif" font-size="11" fill="rgba(255,232,224,.95)">عهد</text>
+          <text x="50" y="65" text-anchor="middle" font-family="Lalezar, sans-serif" font-size="9" fill="rgba(255,232,224,.85)">ولاء</text>
+        </svg>
+      </button>
+    </div>
+    <h2 class="slogan hide" id="introTitle">السعودية خط أحمر</h2>
+    <div class="wrap" id="introBefore" style="display:flex;flex-direction:column;align-items:center;gap:6px">
+      <div class="hint" id="holdHint" style="font-size:21px;font-weight:900;margin-top:min(40vw,26vh,190px)">اختمي عهدكِ للوطن 🇸🇦</div>
+      <div class="hint" style="margin:0;font-size:14px;opacity:.8">اضغطي على الختم لدخول المبادرة</div>
+    </div>
+    <div class="wrap intro-after" id="introAfter">
+      <div class="ahead" id="introAhead">بانتظار أول توقيع في <b>مدرسة الجربة المتوسطة للبنات</b> 🇸🇦</div>
+      <button class="btn btn-red" id="enter" type="button">ادخلي للمبادرة الوطنية</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== STICKY MINI ===================== -->
+<div class="mini" id="mini" aria-hidden="true">
+  <div class="wrap">
+    <div class="mini-mark" id="miniMark"></div>
+    <div class="mini-t">مدرسة الجربة المتوسطة للبنات</div>
+    <div class="mini-c"><span>📜<b data-c="p">0</b></span><span>📸<b data-c="i">0</b></span><span>✉️<b data-c="m">0</b></span></div>
+    <button class="icon-btn" id="muteMini" type="button" aria-label="الصوت"></button>
+  </div>
+</div>
+
+<!-- ===================== BANNER ===================== -->
+<header class="banner" id="banner">
+  <div class="bhero" id="bhero">
+    <div class="emblem">
+      <div class="band static"><i></i></div>
+      <div class="map breath" id="bannerMap"></div>
+    </div>
+    <h1 class="slogan" style="margin:0">السعودية خط أحمر</h1>
+  </div>
+  <div class="wrap">
+    <div class="school">
+      <div class="subtag">🇸🇦 مبادرة وطنية مدرسية تعزيزية</div>
+      <div class="sn" id="schoolName">مدرسة الجربة المتوسطة للبنات</div>
+    </div>
+    <div class="people">
+      <div class="person">
+        <span id="mgrTitle">القيادة المدرسية والمسيرة</span>
+        <b id="mgrName">مديرة مدرسة الجربة المتوسطة للبنات</b>
+      </div>
+      <div class="person">
+        <span id="ownTitle">التنفيذ والمتابعة</span>
+        <b id="ownName">طالبات ومعلمات ومنسوبات المدرسة</b>
+      </div>
+    </div>
+    <div class="counters">
+      <div class="ctr" id="ctrP"><span class="ic">📜</span><span class="n" data-c="p">0</span><span class="l">وثيقة عهد</span></div>
+      <div class="ctr" id="ctrI"><span class="ic">📸</span><span class="n" data-c="i">0</span><span class="l">لقطة ولاء</span></div>
+      <div class="ctr" id="ctrM"><span class="ic">✉️</span><span class="n" data-c="m">0</span><span class="l">رسالة فخر</span></div>
+    </div>
+    <div class="ticker" aria-label="آخر المشاركات"><div class="ticker-in" id="ticker"></div></div>
+    <p class="lead" id="aheadLead"></p>
+  </div>
+</header>
+
+<!-- ===================== HOME HUB ===================== -->
+<section class="hub" id="hub">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:14px">
+    <div class="mission">
+      <div class="backdrop" data-bg="open"></div>
+      <div class="corner-deco"></div>
+      <div class="mission-in" style="padding-bottom:18px">
+        <div class="side">
+          <div class="mlist"></div>
+          <div class="side-char"><div class="beam"></div><div class="cut"><img class="who-img" data-pose="pledge" src="assets/girl-pledge.webp" alt="طالبة مدرسة الجربة"></div><div class="ring"></div><div class="ring ring-f"></div></div>
+        </div>
+        <span class="pill" id="hubPill">مراحلي · ٠ من ٣</span>
+      </div>
+    </div>
+    <div class="tiles">
+      <button class="rect" type="button" data-go="wall" id="rectWall" data-bg="wall"><span class="ic">🖼️</span><b>جدارية الوطن</b><small id="wallCount">مشاركات المدرسة</small></button>
+      <button class="rect" type="button" data-go="mine" id="rectMine" data-bg="open"><span class="ok">✓</span><span class="ic">📜</span><b>وثيقتي المختومة</b><small id="mineState">بعد توقيع الوثيقة</small></button>
+    </div>
+    <p class="verse" style="font-size:22px;margin-top:4px">﴿رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا﴾</p>
+    <div class="foot" id="foot2">مدرسة الجربة المتوسطة للبنات · بإشراف مديرة المدرسة</div>
+  </div>
+</section>
+
+<!-- ===================== SCREENS ===================== -->
+<!-- Stage 1: Pledge -->
+<div class="screen" id="scr-pledge" role="dialog" aria-label="وثيقة العهد">
+  <div class="scr-head"><button class="back" type="button" data-back aria-label="رجوع">→</button><b>وثيقة العهد</b><span class="scr-mark"></span></div>
+  <div class="wrap scr-body">
+    <div class="mission"><div class="backdrop" data-bg="open"></div><div class="corner-deco"></div><div class="mission-in">
+      <span class="pill">مهمة وطنية · ١ من ٣</span>
+      <h2 class="title">وثيقة <span class="r">العهد</span></h2>
+      <p class="say" id="pledgeSay"></p>
+      <div class="form" id="pledgeForm">
+        <label class="lbl" for="pName" id="pNameLbl">اكتبي اسمكِ الثلاثي للتوقيع</label>
+        <input class="inp" id="pName" autocomplete="name" maxlength="40" placeholder="مثال: ريم أحمد السعيد">
+        <div class="err" id="pErr"></div>
+        <button class="btn btn-red" id="openDoc" type="button">افتحي وثيقة العهد</button>
+      </div>
+    </div></div>
+    <div class="doc" id="doc" hidden style="margin-top:18px">
+      <img class="doc-roll" src="assets/scroll-top.webp" alt="">
+      <div class="doc-mid">
+        <h3 class="doc-title">وثيقة العهد والولاء</h3>
+        <div class="doc-sub">السعودية خط أحمر</div>
+        <div id="docLines"></div>
+        <div class="doc-line doc-verse">﴿رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا﴾</div>
+        <div class="sig doc-line">
+          <div class="sig-box">
+            <div class="sig-lbl" id="sigLbl">الموقّعة</div>
+            <div class="sig-name" id="sigName"></div>
+            <div class="sig-meta" id="sigMeta">مدرسة الجربة المتوسطة للبنات</div>
+          </div>
+          <div class="seal-slot"><button class="swear" id="swear" type="button"><b>نعم، أتعهّد</b><small>اضغطي هنا لتوقيعكِ</small></button><div class="seal" id="seal">
+            <img src="assets/seal.webp" alt="الختم الرسمي">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <defs><path id="sealArc" d="M50,50 m-31,0 a31,31 0 1,1 62,0 a31,31 0 1,1 -62,0"/></defs>
+              <circle cx="50" cy="50" r="23" fill="none" stroke="rgba(255,225,215,.55)" stroke-width="1"/>
+              <text font-family="Lalezar, sans-serif" font-size="10.5" fill="rgba(255,232,224,.92)"><textPath href="#sealArc">السعودية خط أحمر ✦ السعودية خط أحمر ✦</textPath></text>
+              <rect x="30" y="47" width="40" height="6" rx="1.5" fill="rgba(255,232,224,.9)"/>
+              <text x="50" y="42" text-anchor="middle" font-family="Lalezar, sans-serif" font-size="11" fill="rgba(255,232,224,.95)">عهد</text>
+              <text x="50" y="65" text-anchor="middle" font-family="Lalezar, sans-serif" font-size="9" fill="rgba(255,232,224,.85)">ولاء</text>
+            </svg>
+          </div></div>
+        </div>
+      </div>
+      <img class="doc-roll" src="assets/scroll-bot.webp" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- Stage 2: Counter Rumors -->
+<div class="screen" id="scr-rumors" role="dialog" aria-label="أصدّ الشائعات">
+  <div class="scr-head"><button class="back" type="button" data-back aria-label="رجوع">→</button><b>أصدّ الشائعات</b><span class="scr-mark"></span></div>
+  <div class="wrap scr-body">
+    <div class="mission" style="border-color:rgba(255,49,72,.45);box-shadow:0 0 40px rgba(255,49,72,.15),0 24px 50px rgba(0,0,0,.45)">
+      <div class="backdrop" data-bg="rumor" style="opacity:.35"></div>
+      <div class="mission-in">
+        <div class="hero" id="rumorHero">
+          <div class="beam"></div>
+          <div class="cut"><img class="who-img" data-pose="stop" src="assets/girl-stop.webp" alt="حارسة الوعي"></div>
+          <div class="ring" style="border-color:var(--red-hot);box-shadow:0 0 14px var(--red-hot),inset 0 0 14px rgba(255,49,72,.6),0 0 50px rgba(255,49,72,.35)"></div>
+          <div class="ring ring-f" style="border-color:var(--red-hot);box-shadow:0 0 14px var(--red-hot),inset 0 0 14px rgba(255,49,72,.6),0 0 50px rgba(255,49,72,.35)"></div>
+          <div id="rumorChips"></div>
+        </div>
+        <span class="pill">مهمة وعي وطني · ٢ من ٣</span>
+        <h2 class="title">أصدّ <span class="r">الشائعات</span></h2>
+        <p class="say" id="rumorSay"></p>
+        <button class="block-btn" id="blockBtn" type="button">✋ أصدّ الشائعات</button>
+        <div class="rules" id="rules">
+          <div class="cards" id="cards"></div>
+          <div class="dots" id="dots"></div>
+          <div class="swipe-hint">اسحبي البطاقات يمين ويسار للتعرف على القواعد</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Stage 3: Share -->
+<div class="screen" id="scr-share" role="dialog" aria-label="شاركينا حبّك">
+  <div class="scr-head"><button class="back" type="button" data-back aria-label="رجوع">→</button><b>شاركينا حبّكِ للوطن</b><span class="scr-mark"></span></div>
+  <div class="wrap scr-body">
+    <div class="mission">
+      <div class="backdrop" data-bg="share"></div>
+      <div class="corner-deco"></div>
+      <div class="mission-in">
+        <div class="hero">
+          <div class="beam"></div>
+          <div class="cut"><img class="who-img" data-pose="share" src="assets/girl-share.webp" alt="مشاركة بالولاء"></div>
+          <div class="ring"></div><div class="ring ring-f"></div>
+          <div class="chip gold" style="top:50%;right:3%"><span class="i">📸</span>لقطة ولاء</div>
+          <div class="chip red" style="top:68%;left:3%;animation-delay:-2s"><span class="i">✉️</span>رسالة فخر</div>
+        </div>
+        <span class="pill">مهمة مشاركة · ٣ من ٣</span>
+        <h2 class="title" id="shareTitle">شاركينا <span class="g">حبّكِ</span></h2>
+        <p class="say" id="shareSay"></p>
+        <form class="form" id="shareForm" novalidate>
+          <label class="lbl" for="sName">الاسم الكريم</label>
+          <input class="inp" id="sName" maxlength="40" placeholder="اكتبي اسمكِ الثلاثي">
+          <label class="lbl" for="sWho">صفتي في مدرسة الجربة</label>
+          <input class="inp" id="sWho" maxlength="30" placeholder="طالبة بالصف الأول متوسط - معلمة - ولي أمر">
+          <div class="choice" role="group" aria-label="نوع المشاركة">
+            <button type="button" class="pickbtn" id="cPhoto" aria-pressed="false"><span class="em">📸</span>صورة وطنية</button>
+            <button type="button" class="pickbtn" id="cMsg" aria-pressed="false"><span class="em">✉️</span>رسالة فخر</button>
+          </div>
+          <div id="photoBox" hidden>
+            <label class="pick" for="sFile" id="pickLbl"><span class="em" style="font-size:34px">🖼️</span><span>اضغطي لاختيار صورة من هاتفك</span></label>
+            <input type="file" id="sFile" accept="image/*" hidden>
+            <input class="inp" id="sCap" maxlength="80" placeholder="عبارة قصيرة تصف الصورة (اختياري)" style="margin-top:10px">
+          </div>
+          <div id="msgBox" hidden>
+            <textarea class="inp" id="sMsg" maxlength="400" placeholder="اكتبي رسالتكِ للوطن الغالي ولجنودنا البواسل..."></textarea>
+          </div>
+          <div class="err" id="sErr"></div>
+          <button class="btn btn-red" type="submit">إرسال المشاركة إلى الجدارية</button>
+          <p class="note">تُنشر المشاركات تلقائياً في جدارية مدرسة الجربة المتوسطة للبنات 🇸🇦</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Wall Screen -->
+<div class="screen" id="scr-wall" role="dialog" aria-label="جدارية الوطن">
+  <div class="scr-head"><button class="back" type="button" data-back aria-label="رجوع">→</button><b>جدارية مدرسة الجربة</b><span class="scr-mark"></span></div>
+  <div class="wrap scr-body" style="display:flex;flex-direction:column;gap:16px">
+    <span class="pill">من منسوبات وطالبات مدرسة الجربة المتوسطة</span>
+    <h2 class="title">جدارية <span class="r">الوطن</span></h2>
+    <div class="wall" id="wall"></div>
+  </div>
+</div>
+
+<!-- My Document Screen -->
+<div class="screen" id="scr-mine" role="dialog" aria-label="وثيقتي المختومة">
+  <div class="scr-head"><button class="back" type="button" data-back aria-label="رجوع">→</button><b>وثيقتي المختومة</b><span class="scr-mark"></span></div>
+  <div class="wrap scr-body">
+    <div class="mission">
+      <div class="mission-in mine" id="mineBox"></div>
+    </div>
+  </div>
+  <div class="close-in">
+    <div class="emblem" style="margin-bottom:18px">
+      <div class="band static"><i></i></div>
+      <div class="map breath" id="closeMap"></div>
+    </div>
+    <div class="wrap" style="display:flex;flex-direction:column;gap:18px">
+      <div class="final-count"><b data-c="p">0</b><span id="finalLbl">وقّعن عهد الولاء في المدرسة</span></div>
+      <div class="soldiers" id="soldiers"><p>حفظ الله قيادتنا الرشيدة وجنودنا البواسل المرابطين على الحدود</p></div>
+      <p class="verse">﴿رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا﴾</p>
+      <div class="foot" id="foot">مدرسة الجربة المتوسطة للبنات · إشراف مديرة المدرسة</div>
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="lb" id="lb" hidden role="dialog" aria-label="عرض المشاركة">
+  <button class="icon-btn lb-close" id="lbClose" type="button" aria-label="إغلاق">✕</button>
+  <div class="lb-body" id="lbBody"></div>
+  <div class="lb-nav">
+    <button class="btn btn-ghost" id="lbPrev" type="button">→ السابقة</button>
+    <span class="lb-count" id="lbCount"></span>
+    <button class="btn btn-ghost" id="lbNext" type="button">التالية ←</button>
+  </div>
+</div>
+
+<!-- Next Mission Modal -->
+<div class="next" id="nextScr" hidden role="dialog" aria-label="مهمتك التالية">
+  <div class="next-top" id="nextTop">
+    <div class="emblem"><div class="band static"><i></i></div><div class="map breath" id="nextMap"></div></div>
+    <h2 class="slogan">السعودية خط أحمر</h2>
+  </div>
+  <div class="wrap next-in">
+    <div class="counters" style="margin-bottom:10px">
+      <div class="ctr"><span class="ic">📜</span><span class="n" data-c="p">0</span><span class="l">وثيقة عهد</span></div>
+      <div class="ctr"><span class="ic">📸</span><span class="n" data-c="i">0</span><span class="l">لقطة ولاء</span></div>
+      <div class="ctr"><span class="ic">✉️</span><span class="n" data-c="m">0</span><span class="l">رسالة فخر</span></div>
+    </div>
+    <div class="say-bubble"><span id="nextSay"></span></div>
+    <div class="side">
+      <div class="mlist"></div>
+      <div class="side-char"><div class="beam"></div><div class="cut"><img class="who-img" data-pose="proud" id="nextChar" src="assets/girl-proud.webp" alt="فخورة بوطني"></div><div class="ring"></div><div class="ring ring-f"></div></div>
+    </div>
+    <button class="next-home" id="nextHome" type="button">العودة للرئيسية</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+"use strict";
+try{document.documentElement.setAttribute("dir","rtl");document.documentElement.setAttribute("lang","ar")}catch(e){}
+var $=function(s,r){return (r||document).querySelector(s)};
+var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+
+/* School Configuration: مدرسة الجربة المتوسطة للبنات */
+var SCHOOL_INFO = {
+  school: "مدرسة الجربة المتوسطة للبنات",
+  mgrTitle: "مديرة مدرسة الجربة المتوسطة للبنات",
+  mgrName: "مديرة مدرسة الجربة المتوسطة للبنات",
+  stage: "m", // متوسط
+  gender: "f" // بنات
+};
+
+/* LocalStorage Storage handler */
+var PREFIX = "jarbah_clean_v2_";
+function store(k, v){
+  try {
+    if(v === undefined) {
+      var x = localStorage.getItem(PREFIX + k);
+      return x ? JSON.parse(x) : null;
+    }
+    localStorage.setItem(PREFIX + k, JSON.stringify(v));
+  } catch(e) { return null; }
+}
+
+var MAP="M771 383 L779 393 L793 390 L794 395 L799 389 L803 392 L796 399 L793 406 L799 405 L807 409 L808 418 L854 477 L975 494 L979 489 L1000 527 L969 630 L826 682 L687 704 L645 726 L618 762 L610 781 L598 789 L589 788 L576 771 L558 774 L515 770 L503 764 L455 765 L452 768 L448 767 L444 770 L442 767 L435 767 L427 761 L420 759 L408 769 L412 772 L407 775 L406 781 L405 790 L410 796 L409 803 L404 803 L402 810 L390 818 L388 803 L378 792 L378 786 L374 783 L370 776 L370 784 L367 762 L346 743 L343 742 L332 724 L329 722 L326 709 L315 698 L317 690 L312 685 L313 678 L308 675 L307 668 L303 664 L302 656 L294 650 L295 651 L296 646 L293 641 L289 641 L289 642 L283 635 L283 632 L262 615 L253 614 L255 616 L246 612 L237 600 L238 599 L234 591 L230 590 L231 587 L224 582 L218 572 L214 562 L218 557 L215 548 L215 539 L213 540 L207 526 L210 526 L212 514 L217 505 L214 507 L214 498 L209 488 L211 486 L208 483 L209 487 L206 482 L203 477 L206 481 L208 481 L205 476 L201 474 L201 466 L196 460 L191 444 L189 445 L191 447 L188 446 L183 432 L160 415 L162 413 L160 414 L160 411 L156 414 L147 407 L145 409 L140 408 L136 403 L137 399 L125 381 L122 378 L127 377 L127 361 L120 353 L112 336 L107 331 L105 333 L101 330 L99 324 L101 317 L92 312 L69 271 L47 242 L36 221 L28 214 L31 211 L23 208 L13 210 L13 208 L11 210 L12 208 L9 209 L6 207 L2 213 L0 208 L4 205 L11 187 L10 180 L18 144 L71 152 L90 136 L102 118 L138 111 L146 93 L162 84 L113 33 L208 7 L218 0 L278 10 L356 54 L480 152 L559 159 L568 157 L611 162 L618 181 L622 186 L658 186 L661 189 L660 194 L663 193 L662 198 L667 203 L668 212 L675 214 L673 216 L679 223 L677 228 L678 224 L676 227 L676 223 L674 229 L676 228 L676 230 L679 230 L679 234 L677 234 L680 233 L681 236 L683 234 L688 238 L696 238 L700 243 L691 243 L697 245 L696 249 L700 248 L700 255 L704 256 L703 258 L710 259 L708 257 L712 256 L712 261 L718 268 L731 274 L740 284 L733 282 L733 279 L732 281 L734 292 L741 297 L743 301 L739 316 L734 308 L731 311 L732 318 L734 316 L737 319 L738 325 L745 337 L740 332 L739 334 L749 345 L750 346 L750 343 L755 347 L759 367 L767 376 L768 384 L771 383Z";
+
+function mapSVG(small){
+  var id="g"+Math.random().toString(36).slice(2,7);
+  return '<svg viewBox="-30 -30 1060 878" aria-hidden="true"><defs>'+
+   '<linearGradient id="'+id+'f" x1="0" y1="0" x2=".3" y2="1"><stop offset="0" stop-color="#2f8a4f"/><stop offset=".5" stop-color="#17602f"/><stop offset="1" stop-color="#0b3d1d"/></linearGradient>'+
+   '<filter id="'+id+'b"><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dx="-6" dy="-8"/><feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="s"/><feFlood flood-color="#9dffc4" flood-opacity=".45"/><feComposite in2="s" operator="in"/><feComposite in2="SourceGraphic" operator="over"/></filter>'+
+   '</defs>'+
+   '<path d="'+MAP+'" fill="url(#'+id+'f)" filter="url(#'+id+'b)"/>'+
+   '<path d="'+MAP+'" fill="none" stroke="#3dff8f" stroke-width="'+(small?22:9)+'" stroke-linejoin="round"/>'+
+   (small?'':'<path d="'+MAP+'" fill="none" stroke="#d9ffe9" stroke-width="2.5" stroke-linejoin="round" opacity=".9"/>')+
+   '</svg>';
+}
+["introMap","bannerMap","closeMap","nextMap"].forEach(function(id){
+  var el=$("#"+id);if(el)el.innerHTML=mapSVG(false);
+});
+$("#miniMark").innerHTML=mapSVG(true);
+
+var signed = store("signed");
+var counts = store("counts") || {p: 0, i: 0, m: 0};
+var myPosts = store("posts") || [];
+var done = store("done") || {};
+
+/* Sound FX (Web Audio API Synthesizer) */
+var muted = !!store("muted"), AC = null;
+function ac(){
+  if(!AC){
+    try{ AC = new (window.AudioContext || window.webkitAudioContext)(); }catch(e){}
+  }
+  if(AC && AC.state === "suspended") AC.resume();
+  return AC;
+}
+function tone(f1, f2, dur, type, vol, delay){
+  var a = ac(); if(!a || muted) return;
+  var t = a.currentTime + (delay || 0);
+  var o = a.createOscillator(), g = a.createGain();
+  o.type = type || "sine";
+  o.frequency.setValueAtTime(f1, t);
+  o.frequency.exponentialRampToValueAtTime(f2, t + dur);
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(vol || .2, t + .02);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g).connect(a.destination);
+  o.start(t); o.stop(t + dur + .05);
+}
+function noise(dur, freq, vol, delay){
+  var a = ac(); if(!a || muted) return;
+  var t = a.currentTime + (delay || 0);
+  var b = a.createBuffer(1, Math.floor(a.sampleRate * dur), a.sampleRate), d = b.getChannelData(0);
+  for(var i=0; i<d.length; i++) d[i] = (Math.random()*2 - 1) * (1 - i/d.length);
+  var s = a.createBufferSource(); s.buffer = b;
+  var f = a.createBiquadFilter(); f.type = "bandpass"; f.frequency.value = freq; f.Q.value = .8;
+  var g = a.createGain(); g.gain.value = vol;
+  s.connect(f).connect(g).connect(a.destination);
+  s.start(t);
+}
+var SFX = {
+  activate: function(){tone(60,38,1,"sine",.55);noise(.9,500,.35);tone(440,880,.35,"sawtooth",.06,.1);tone(880,880,.7,"triangle",.12,.4);tone(1320,1320,.8,"triangle",.07,.5)},
+  paper: function(){noise(.9,2400,.35);noise(.5,1200,.2,.4)},
+  stamp: function(){tone(110,45,.35,"sine",.7);noise(.15,600,.5)},
+  pop: function(){tone(900,200,.12,"square",.05)},
+  blast: function(){tone(80,30,.7,"sine",.5);noise(.6,900,.4)},
+  send: function(){tone(660,660,.15,"triangle",.15);tone(990,990,.25,"triangle",.12,.12)},
+  tick: function(){tone(1400,1400,.04,"square",.03)}
+};
+function buzz(p){try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
+var spk='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg>';
+var mute='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M17 9l5 6M22 9l-5 6"/></svg>';
+function paintMute(){
+  $("#muteMini").innerHTML = muted ? mute : spk;
+  $("#muteMini").setAttribute("aria-label", muted ? "تشغيل الصوت" : "كتم الصوت");
+}
+$("#muteMini").onclick = function(){
+  muted = !muted; store("muted", muted); paintMute(); if(muted) hush();
+};
+paintMute();
+
+/* Voice Prompts */
+var VA = null;
+function vEl(){
+  if(!VA){ try{ VA = new Audio(); VA.preload = "auto"; }catch(e){} }
+  return VA;
+}
+function voice(n){
+  var a = vEl(); if(!a || muted) return;
+  try{
+    a.pause(); a.muted = false;
+    a.src = "assets/v/" + n + ".mp3";
+    a.currentTime = 0;
+    var pr = a.play();
+    if(pr && pr.catch) pr.catch(function(){});
+  }catch(e){}
+}
+function say(k){ voice("say-f-" + k); }
+function hush(){ if(VA) try{ VA.pause(); }catch(e){} }
+
+/* Counters */
+function fmt(n){ return n.toLocaleString("en-US"); }
+function paintCounts(anim){
+  $$("[data-c]").forEach(function(el){
+    var to = counts[el.getAttribute("data-c")];
+    if(!anim){ el.textContent = fmt(to); return; }
+    var t0 = performance.now();
+    (function step(t){
+      var p = Math.min(1, (t - t0)/1400), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(Math.round(to * e));
+      if(p < 1) requestAnimationFrame(step);
+    })(t0);
+  });
+  var ic = $("#introCount"); if(ic) ic.textContent = fmt(counts.p);
+  var ia = $("#introAhead");
+  if(ia){
+    if(counts.p === 0){
+      ia.innerHTML = "بانتظار أول توقيع في <b>مدرسة الجربة المتوسطة للبنات</b> 🇸🇦";
+    } else {
+      ia.innerHTML = "فعّلته قبلكِ <b>" + fmt(counts.p) + "</b> من منسوبات مدرستنا";
+    }
+  }
+  if(counts.p === 0){
+    $("#aheadLead").innerHTML = "كوني أول من يوقّع وثيقة العهد والولاء في <b>مدرسة الجربة المتوسطة للبنات</b> 🇸🇦";
+  } else {
+    $("#aheadLead").innerHTML = signed ?
+      ("أنتِ ضمن <b>" + fmt(counts.p) + "</b> وقّعن عهد الولاء في مدرسة الجربة") :
+      ("سبقكِ إلى العهد <b>" + fmt(counts.p) + "</b> من منسوبات مدرسة الجربة… كوني التالية");
+  }
+}
+function bump(k, id){
+  counts[k]++; store("counts", counts); paintCounts(false);
+  var c = $("#" + id); if(c){ c.classList.remove("bump"); void c.offsetWidth; c.classList.add("bump"); }
+  SFX.tick();
+  ticker();
+}
+
+/* Rolling Ticker: dynamically populated with school participants */
+function ticker(){
+  var items = [];
+  if(myPosts && myPosts.length > 0){
+    myPosts.forEach(function(p){
+      var act = p.t === "photo" ? "شاركت لقطة ولاء 📸" : "كتبت رسالة فخر ✉️";
+      items.push("<span>🔴 " + esc(p.n) + " (" + esc(p.w||"مدرسة الجربة") + ") " + act + "</span>");
+    });
+  }
+  if(signed && signed.name){
+    items.unshift("<span>🔴 " + esc(signed.name) + " وقّعت وثيقة العهد والولاء 📜</span>");
+  }
+  if(items.length === 0){
+    var welcome = "<span>🔴 مبادرة السعودية خط أحمر - مدرسة الجربة المتوسطة للبنات 🇸🇦</span><span>🔴 كوني أول من يوقّع وثيقة العهد والولاء 📜</span><span>🔴 شاركينا بصورة أو رسالة فخر في جدارية الوطن 📸</span>";
+    $("#ticker").innerHTML = welcome + welcome;
+  } else {
+    var str = items.join("") + "<span>🇸🇦 مدرسة الجربة المتوسطة للبنات - إشراف مديرة المدرسة</span>";
+    $("#ticker").innerHTML = str + str;
+  }
+}
+
+/* Typing effect */
+function typeSay(el, html){
+  if(!el) return;
+  clearInterval(el._t);
+  var tmp = document.createElement("div"); tmp.innerHTML = html;
+  var plain = tmp.textContent, i = 0;
+  el.innerHTML = '<span class="caret"></span>';
+  el._t = setInterval(function(){
+    i += 1;
+    var shown = plain.slice(0, i);
+    el.innerHTML = (i >= plain.length ? html : esc(shown)) + '<span class="caret"></span>';
+    if(i >= plain.length) clearInterval(el._t);
+  }, 35);
+}
+function esc(s){ return String(s||"").replace(/[&<>"']/g, function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]}); }
+
+/* Pledge Text */
+var pledgeText = {
+  intro: "أَنَا ابْنَةُ هٰذَا الوَطَنِ الغَالِي، وَطَالِبَةُ مَدْرَسَةِ الجَرْبَةِ المُتَوَسِّطَةِ لِلْبَنَاتِ، أَتَعَهَّدُ أَمَامَ اللهِ ثُمَّ أَمَامَ وَطَنِي:",
+  points: [
+    "أَنْ أَحْفَظَ أَمْنَ وَطَنِي، وَأَكُونَ عَيْنًا سَاهِرَةً عَلَى سَلَامَتِهِ.",
+    "أَلَّا أَنْشُرَ شَائِعَةً، وَلَا أُعِيدَ إِرْسَالَ خَبَرٍ قَبْلَ التَّحَقُّقِ مِنْ مَصْدَرِهِ الرَّسْمِيِّ.",
+    "أَلَّا أُصَوِّرَ أَوْ أَنْشُرَ مَا يَمَسُّ أَمْنَ بِلَادِي وَمَوَاقِعَهَا العَسْكَرِيَّةَ.",
+    "أَنْ أَفْخَرَ بِقِيَادَتِي الرَّشِيدَةِ، وَأَلْتَفَّ حَوْلَهَا قَوْلًا وَعَمَلًا.",
+    "أَنْ أَدْعُوَ لِجُنُودِنَا المُرَابِطِينَ عَلَى الحُدُودِ، وَأَحْفَظَ جَمِيلَهُمْ وَتَضْحِيَاتِهِمْ.",
+    "أَنْ أَكُونَ صُورَةً مُشَرِّفَةً لِمَدْرَسَتِي وَوَطَنِي فِي أَخْلَاقِي وَعِلْمِي وَسُلُوكِي."
+  ]
+};
+function renderDocLines(){
+  var body = pledgeText.points.map(function(t, i){
+    t = t.replace(/\.$/, "");
+    return (i === 0 ? t : "وَ" + t);
+  }).join("، ") + ".";
+  $("#docLines").innerHTML = '<p class="doc-line doc-para" style="margin:0"><b>' + pledgeText.intro + '</b> ' + body + '</p>';
+}
+
+/* Rumors Game */
+var RUM = [
+  ["عاجل‼️ انشروها قبل الحذف", "مجهول"],
+  ["مقطع خطير لا يفوتك 😱", "معاد توجيهه"],
+  ["مصدر مطلع يقول…", "حساب وهمي"],
+  ["تعطيل الدراسة غداً؟", "قروب واتساب"],
+  ["أرسليها لعشر طالبات", "رسائل سلاسل"],
+  ["صوّري الموقع وانشريه", "حساب مشبوه"]
+];
+var RPOS = [["top:4%;right:2%"],["top:12%;left:2%"],["top:34%;right:1%"],["top:44%;left:1%"],["top:62%;right:2%"],["top:72%;left:2%"]];
+function renderRumors(){
+  $("#rumorChips").innerHTML = RUM.map(function(r, i){
+    return '<div class="chip rum" style="' + RPOS[i][0] + ';animation-delay:-' + (i * .8) + 's">' + r[0] + '<small>' + r[1] + '</small></div>';
+  }).join("");
+  $("#blockBtn").hidden = false;
+  $("#rumorHero").hidden = false;
+  $("#rules").classList.remove("on");
+}
+
+var RULES = [
+  ["✋", "أتوقف", "لا أنشر أي خبر أو مقطع قبل أن أتأكد تماماً من صحته."],
+  ["🔍", "أتحقق", "مصدري الجهات الرسمية فقط: واس، الدفاع المدني، وزارة الداخلية، وزارة التعليم."],
+  ["📵", "لا أصوّر ولا أنشر", "أي موقع أو اعتراض أو تحرك عسكري، فنشره يخدم العدو ويضر أمننا."],
+  ["🚫", "لا أصدّق", "كلمات «عاجل» و«انشروها» والمصادر المجهولة مروجة الفتن."],
+  ["💬", "أنبّه بلطف", "زميلاتي وأهلي إذا نشروا شائعة، وأنصح بعدم تداولها."],
+  ["🚩", "أبلّغ", "عن الحسابات المشبوهة والمسيئة لوطني عبر المنصات الأمنية المعتمدة (كلنا أمن)."]
+];
+function renderRules(){
+  $("#cards").innerHTML = RULES.map(function(r){
+    return '<div class="rcard"><span class="em">' + r[0] + '</span><h3>' + r[1] + '</h3><p>' + r[2] + '</p></div>';
+  }).join("") + '<div class="rcard final"><span class="em">🇸🇦</span><h3>كلمتي أمانة… ووطني خط أحمر</h3><p>أحسنتِ يا ابنة مدرسة الجربة، أنتِ الآن حارسة الوعي والأمن الفكري!</p><button class="btn btn-red" type="button" data-next="2" style="margin-top:8px">المهمة التالية: شاركينا حبّكِ ←</button></div>';
+  $("#dots").innerHTML = RULES.concat([0]).map(function(_, i){ return "<i" + (i ? "" : ' class="on"') + "></i>"; }).join("");
+}
+$("#cards").addEventListener("scroll", function(){
+  var c = this, i = Math.round(Math.abs(c.scrollLeft) / c.clientWidth);
+  if(i === RULES.length && !c._fin){ c._fin = 1; say(6); }
+  $$("#dots i").forEach(function(d, k){ d.classList.toggle("on", k === i); });
+}, {passive: true});
+
+$("#blockBtn").onclick = function(){
+  var btn = this, hero = $("#rumorHero");
+  SFX.blast(); buzz([40, 30, 80]);
+  var w = document.createElement("div"); w.className = "wave"; btn.appendChild(w);
+  setTimeout(function(){ w.remove(); }, 950);
+
+  $$(".chip.rum", hero).forEach(function(b, i){
+    setTimeout(function(){
+      b.classList.add("pop"); SFX.pop();
+      var r = b.getBoundingClientRect(), fr = hero.getBoundingClientRect();
+      for(var k=0; k<8; k++){
+        var s = document.createElement("div"); s.className = "shard";
+        s.style.left = (r.left - fr.left + r.width/2) + "px";
+        s.style.top = (r.top - fr.top + r.height/2) + "px";
+        s.style.setProperty("--dx", (Math.random()*170 - 85) + "px");
+        s.style.setProperty("--dy", (Math.random()*170 - 85) + "px");
+        s.style.setProperty("--rot", (Math.random()*360) + "deg");
+        s.style.background = k%2 ? "#fff" : "#ff3148";
+        hero.appendChild(s);
+        setTimeout(function(x){ return function(){ x.remove(); }; }(s), 850);
+      }
+    }, 120 + i*110);
+  });
+
+  markDone("2");
+  setTimeout(function(){
+    btn.hidden = true; say(4);
+    typeSay($("#rumorSay"), "صددتِ الشائعات ✋ والآن <em>احفظي قواعد الوعي الست</em>");
+    hero.hidden = true;
+    $("#rules").classList.add("on");
+    var sc = $("#scr-rumors"); if(sc) sc.scrollTo({top:0, behavior:"smooth"});
+  }, 1100);
+};
+
+/* Stages & Missions Management */
+var MS = [
+  {k: 1, n: "الأولى", t: "وثيقة العهد"},
+  {k: 2, n: "الثانية", t: "أصدّ الشائعات"},
+  {k: 3, n: "الثالثة", t: "شاركينا حبّكِ"}
+];
+function renderMissions(){
+  var cu = 0;
+  for(var i=1; i<=3; i++){ if(!done[i]){ cu = i; break; } }
+  var h = MS.map(function(m){
+    var st = done[m.k] ? "done" : (m.k === cu ? "cur" : "up");
+    return '<button class="mrect ' + st + '" type="button" data-stage="' + m.k + '"><span class="mk">' + (st === "done" ? "✓" : ["", "١", "٢", "٣"][m.k]) + '</span><span class="mt"><small>' + (st === "done" ? "تمّت بنجاح ✓ " : "") + 'مهمتك ' + m.n + '</small><b>' + m.t + '</b></span></button>';
+  }).join("");
+  $$(".mlist").forEach(function(l){ l.innerHTML = h; });
+}
+
+function paintHome(){
+  renderMissions();
+  var n = (done[1]?1:0) + (done[2]?1:0) + (done[3]?1:0);
+  var ar = ["٠", "١", "٢", "٣"];
+  $("#hubPill").textContent = n === 3 ? "أكملتِ مراحلكِ كاملة 🇸🇦 ✓" : "مراحلي في المبادرة · " + ar[n] + " من ٣";
+  $("#rectMine").classList.toggle("done", !!signed);
+  $("#rectMine").classList.toggle("locked", !signed);
+  $("#mineState").textContent = signed ? "جاهزة باسمكِ للتحميل" : "بعد توقيع الوثيقة";
+  $("#wallCount").textContent = wallItems.length === 0 ? "بانتظار المشاركة الأولى" : (wallItems.length + " مشاركة");
+  [["pledge", 1], ["rumors", 2], ["share", 3]].forEach(function(p){
+    $("#scr-" + p[0]).classList.toggle("done", !!done[p[1]]);
+  });
+  $("#scr-mine").classList.toggle("done", !!signed);
+}
+
+function markDone(k){
+  if(done[k]) return;
+  done[k] = true; store("done", done);
+  paintHome();
+  tone(880, 1320, .25, "triangle", .12, .1);
+  if(done[1] && done[2] && done[3]){
+    setTimeout(function(){
+      toast("مبارك! أكملتِ مراحل العهد الثلاث بنجاح 🇸🇦 وطنكِ ومدرستكِ يفخران بكِ!");
+    }, 2800);
+  }
+}
+
+/* Intro Actions */
+var stampBtn = $("#stampBtn"), activated = false;
+stampBtn.addEventListener("click", function(){
+  if(activated) return;
+  activated = true; ac();
+  stampBtn.classList.add("slam");
+  setTimeout(impact, 400);
+});
+function impact(){
+  SFX.stamp(); SFX.activate(); buzz([70, 30, 150]);
+  var I = $("#intro"); I.classList.add("shake");
+  setTimeout(function(){ I.classList.remove("shake"); }, 450);
+  var sh = document.createElement("div"); sh.className = "shock";
+  $("#introEmblem").appendChild(sh);
+  setTimeout(function(){ sh.remove(); }, 950);
+  $("#introBand").classList.add("on");
+  $("#introBefore").style.display = "none";
+  stampBtn.classList.add("gone");
+  setTimeout(function(){
+    var m = $("#introMap"); m.classList.remove("pre"); m.classList.add("show");
+    setTimeout(function(){ m.classList.add("flare"); }, 700);
+  }, 500);
+  setTimeout(function(){
+    voice("slogan");
+    var t = $("#introTitle"); t.classList.add("reveal"); t.classList.remove("hide");
+    setTimeout(function(){ t.classList.add("revealed"); }, 1200);
+  }, 1100);
+  setTimeout(function(){
+    $("#introAfter").classList.add("on"); paintCounts(true);
+  }, 1900);
+}
+function closeIntro(){
+  ac(); $("#intro").classList.add("gone");
+  document.body.classList.remove("locked");
+  setTimeout(function(){ paintCounts(true); }, 300);
+}
+$("#enter").onclick = closeIntro;
+$("#skip").onclick = closeIntro;
+document.body.classList.add("locked");
+
+/* Navigation and Modals */
+var SCR = ["pledge", "rumors", "share", "wall", "mine"], cur = null, pushed = false;
+function go(id){
+  if(!$("#nextScr").hidden) hideNext();
+  if(SCR.indexOf(id) < 0){
+    var t = document.getElementById(id);
+    if(t) t.scrollIntoView({behavior:"smooth", block:"start"});
+    return;
+  }
+  if(cur && cur !== id){ $("#scr-" + cur).classList.remove("open"); }
+  if(!pushed){ try{ history.pushState({khat:1}, ""); pushed = true; }catch(e){} }
+  cur = id;
+  var sc = $("#scr-" + id); sc.scrollTop = 0; sc.classList.add("open");
+  document.body.classList.add("locked");
+  tone(520, 780, .12, "triangle", .06);
+  hush();
+  if(id === "pledge" && !signed) setTimeout(function(){ say(1); }, 350);
+  else if(id === "rumors" && !$("#blockBtn").hidden) setTimeout(function(){ say(3); }, 350);
+  else if(id === "share") setTimeout(function(){ say(5); }, 350);
+}
+function back(){
+  hush(); if(!cur) return;
+  $("#scr-" + cur).classList.remove("open");
+  cur = null; document.body.classList.remove("locked");
+  paintHome();
+}
+window.addEventListener("popstate", function(){
+  pushed = false;
+  if(!$("#nextScr").hidden){ hideNext(); document.body.classList.remove("locked"); }
+  back();
+});
+document.addEventListener("click", function(e){
+  if(e.target.closest("[data-back]")){
+    if(pushed){ try{ history.back(); }catch(x){ back(); } } else back();
+    return;
+  }
+  var b = e.target.closest("[data-go]"); if(b) go(b.getAttribute("data-go"));
+  var st = e.target.closest("[data-stage]");
+  if(st){
+    var k = st.getAttribute("data-stage");
+    go({1: "pledge", 2: "rumors", 3: "share"}[k]);
+  }
+});
+
+function showNext(k){
+  var nx = {
+    1: {id: "rumors", name: "✋ أصدّ الشائعات", say: "أحسنتِ! <em>تمّ عهدكِ بنجاح</em> ✓ والآن… احمي وطنكِ ومدرستكِ من الشائعات"},
+    2: {id: "share", name: "📸 شاركينا حبّكِ", say: "رائعة! <em>صددتِ الشائعات</em> ✋ بقيت لكِ مهمة مشاركة حبّكِ للوطن"}
+  }[k];
+  if(!nx) return;
+  if(cur){ $("#scr-" + cur).classList.remove("open"); cur = null; }
+  renderMissions();
+  var n = $("#nextScr"); n.hidden = false; n.scrollTop = 0;
+  document.body.classList.add("locked");
+  tone(660, 990, .3, "triangle", .12);
+  setTimeout(function(){ typeSay($("#nextSay"), nx.say); }, 450);
+}
+function hideNext(){ $("#nextScr").hidden = true; }
+$("#nextHome").onclick = function(){
+  hideNext(); document.body.classList.remove("locked"); paintHome();
+};
+document.addEventListener("click", function(e){
+  var b = e.target.closest("[data-next]");
+  if(b) showNext(+b.getAttribute("data-next"));
+});
+
+/* Pledge Flow */
+var docEl = $("#doc");
+function dateStr(d){
+  try{
+    return new Date(d).toLocaleDateString("ar-SA-u-ca-islamic-umalqura", {day: "numeric", month: "long", year: "numeric"});
+  }catch(e){
+    return new Date(d).toLocaleDateString("ar-SA");
+  }
+}
+$("#pName").addEventListener("input", function(){
+  $("#sigName").textContent = this.value.trim();
+  $("#pErr").textContent = "";
+});
+$("#openDoc").onclick = function(){
+  var n = $("#pName").value.trim();
+  if(n.length < 3){
+    $("#pErr").textContent = "لطفاً اكتبي اسمكِ الكريم أولاً";
+    $("#pName").focus(); return;
+  }
+  $("#sigName").textContent = n;
+  $("#sigMeta").innerHTML = "مدرسة الجربة المتوسطة للبنات<br>" + dateStr(Date.now());
+  $("#pledgeForm").hidden = true;
+  docEl.hidden = false;
+  void docEl.offsetWidth;
+  docEl.classList.add("open");
+  SFX.paper(); buzz(20); hush();
+  setTimeout(function(){ voice("pledge-f"); }, 600);
+  $$(".doc-line", docEl).forEach(function(l, i){
+    setTimeout(function(){ l.classList.add("on"); }, 500 + i*380);
+  });
+  setTimeout(function(){ docEl.scrollIntoView({behavior: "smooth", block: "start"}); }, 150);
+};
+
+$("#swear").onclick = function(){
+  var n = $("#pName").value.trim(); if(!n) return;
+  this.hidden = true; hush();
+  $("#seal").classList.add("on");
+  setTimeout(function(){
+    SFX.stamp(); buzz([60, 30, 40]);
+    docEl.classList.add("shake");
+    setTimeout(function(){ docEl.classList.remove("shake"); }, 450);
+  }, 330);
+  signed = {name: n, date: Date.now()};
+  store("signed", signed);
+  markDone("1");
+  setTimeout(function(){
+    bump("p", "ctrP"); say(2);
+    typeSay($("#pledgeSay"), "تمّ عهدكِ يا <b>" + esc(n) + "</b>… <em>وطنكِ ومدرستكِ يفخران بكِ</em>");
+    renderMine();
+    toast("تمّ توثيق عهدكِ 🇸🇦 وثيقتكِ جاهزة للتحميل في «وثيقتي المختومة»");
+    setTimeout(function(){ showNext(1); }, 2200);
+  }, 800);
+};
+
+function restoreSigned(){
+  if(!signed) return;
+  done[1] = true; store("done", done);
+  $("#pName").value = signed.name;
+  $("#sigName").textContent = signed.name;
+  $("#sigMeta").innerHTML = "مدرسة الجربة المتوسطة للبنات<br>" + dateStr(signed.date);
+  $("#pledgeForm").hidden = true;
+  docEl.hidden = false;
+  docEl.classList.add("open");
+  $$(".doc-line", docEl).forEach(function(l){ l.classList.add("on"); });
+  $("#swear").hidden = true;
+  $("#seal").classList.add("on");
+}
+
+/* Share & Form Submission */
+var mode = null, photoData = null;
+function setMode(m){
+  mode = m;
+  $("#cPhoto").setAttribute("aria-pressed", m === "photo");
+  $("#cMsg").setAttribute("aria-pressed", m === "msg");
+  $("#photoBox").hidden = m !== "photo";
+  $("#msgBox").hidden = m !== "msg";
+  $("#sErr").textContent = "";
+}
+$("#cPhoto").onclick = function(){ setMode("photo"); };
+$("#cMsg").onclick = function(){ setMode("msg"); $("#sMsg").focus(); };
+
+$("#sFile").addEventListener("change", function(){
+  var f = this.files && this.files[0]; if(!f) return;
+  var r = new FileReader();
+  r.onload = function(){
+    var im = new Image();
+    im.onload = function(){
+      var s = Math.min(1, 900 / Math.max(im.width, im.height)), cv = document.createElement("canvas");
+      cv.width = im.width * s; cv.height = im.height * s;
+      cv.getContext("2d").drawImage(im, 0, 0, cv.width, cv.height);
+      photoData = cv.toDataURL("image/jpeg", .82);
+      $("#pickLbl").innerHTML = '<img src="' + photoData + '" alt="الصورة المختارة"><span>اضغطي لتغيير الصورة</span>';
+    };
+    im.src = r.result;
+  };
+  r.readAsDataURL(f);
+});
+
+$("#shareForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  var n = $("#sName").value.trim(), who = $("#sWho").value.trim(), err = $("#sErr");
+  if(n.length < 2){ err.textContent = "اكتبي اسمكِ الكريم أولاً"; return; }
+  if(!mode){ err.textContent = "اختاري نوع المشاركة: صورة أو رسالة"; return; }
+  if(mode === "photo" && !photoData){ err.textContent = "اختاري صورة وطنية من جهازكِ"; return; }
+  if(mode === "msg" && $("#sMsg").value.trim().length < 5){ err.textContent = "اكتبي رسالتكِ الوطنية الكريمة"; return; }
+
+  var item = {
+    n: n,
+    w: who || "طالبة بمدرسة الجربة المتوسطة",
+    t: mode,
+    img: mode === "photo" ? photoData : null,
+    cap: $("#sCap").value.trim(),
+    msg: $("#sMsg").value.trim(),
+    pending: false
+  };
+
+  myPosts.unshift(item);
+  store("posts", myPosts.slice(0, 10));
+  markDone("3");
+  SFX.send(); buzz(30);
+  bump(mode === "photo" ? "i" : "m", mode === "photo" ? "ctrI" : "ctrM");
+
+  this.reset(); photoData = null; setMode(null);
+  $("#pickLbl").innerHTML = '<span class="em" style="font-size:34px">🖼️</span><span>اضغطي لاختيار صورة من هاتفك</span>';
+  renderWall();
+  toast("نُشرت مشاركتكِ في جدارية مدرسة الجربة المتوسطة للبنات ✓");
+  setTimeout(function(){ go("wall"); }, 900);
+});
+
+/* Wall & Community Contributions */
+var wallItems = [];
+function renderWall(){
+  wallItems = myPosts.slice();
+  paintHome();
+  if(!wallItems.length){
+    $("#wall").innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:44px 20px;background:rgba(61,255,143,.04);border:2px dashed var(--neon-soft);border-radius:24px;display:flex;flex-direction:column;align-items:center;gap:12px">' +
+      '<span style="font-size:46px">🇸🇦</span>' +
+      '<b style="font-size:20px;color:#fff">الجدارية بانتظار مشاركتكِ الأولى</b>' +
+      '<p style="margin:0;font-size:15px;color:var(--ink-soft);max-width:380px;line-height:1.7">كوني أول من يشارك بصورة وطنية أو رسالة فخر واعتزاز من طالبات ومنسوبات مدرسة الجربة المتوسطة للبنات</p>' +
+      '<button class="btn btn-red" type="button" data-go="share" style="margin-top:6px">شاركينا حبّكِ للوطن 📸</button>' +
+    '</div>';
+    return;
+  }
+  $("#wall").innerHTML = wallItems.map(function(it, i){
+    var badge = (i === 0 ? '<span class="badge">أحدث مشاركة</span>' : '');
+    var top = it.t === "photo" ?
+      ('<div class="media" style="background-image:url(\'' + it.img + '\')">' + badge + '</div>') :
+      ('<div class="msg">' + badge + '<q>' + esc(it.msg) + '</q></div>');
+    return '<button class="tile" type="button" data-i="' + i + '">' + top + '<div class="who"><b>' + esc(it.n) + '</b><span>' + esc(it.w||"مدرسة الجربة") + '</span></div></button>';
+  }).join("");
+}
+
+var lbI = 0;
+$("#wall").addEventListener("click", function(e){
+  var t = e.target.closest(".tile"); if(!t) return;
+  lbI = +t.dataset.i; openLb();
+});
+function openLb(){
+  var it = wallItems[lbI];
+  $("#lbBody").innerHTML = (it.t === "photo" ? '<img src="' + it.img + '" alt="">' + (it.cap ? '<div class="lb-cap">' + esc(it.cap) + '</div>' : "") : '<div class="lb-msg">' + esc(it.msg) + '</div>') + '<div class="lb-who"><b>' + esc(it.n) + '</b><span>' + esc(it.w||"") + '</span></div>';
+  $("#lbCount").textContent = (lbI + 1) + " / " + wallItems.length;
+  $("#lb").hidden = false; document.body.classList.add("locked");
+}
+function closeLb(){
+  $("#lb").hidden = true; if(!cur) document.body.classList.remove("locked");
+}
+$("#lbClose").onclick = closeLb;
+$("#lbNext").onclick = function(){ lbI = (lbI + 1) % wallItems.length; openLb(); };
+$("#lbPrev").onclick = function(){ lbI = (lbI - 1 + wallItems.length) % wallItems.length; openLb(); };
+
+/* Canvas Generators for Official Document & WhatsApp Card */
+var IMG = {};
+function load(src){
+  return IMG[src] || (IMG[src] = new Promise(function(res){
+    var i = new Image();
+    i.onload = function(){ res(i); };
+    i.onerror = function(){ res(null); };
+    i.src = src;
+  }));
+}
+function wrapText(x, text, px, y, maxW, lh){
+  var words = text.split(" "), line = "", out = [];
+  words.forEach(function(w){
+    var t = line ? line + " " + w : w;
+    if(x.measureText(t).width > maxW && line){ out.push(line); line = w; }
+    else line = t;
+  });
+  if(line) out.push(line);
+  out.forEach(function(l, i){ x.fillText(l, px, y + i * lh); });
+  return y + out.length * lh;
+}
+function drawEmblem(x, cx, cy, mapW, W){
+  var bh = mapW * .17, by = cy + mapW * .818 * .04;
+  var g = x.createLinearGradient(0, by - bh/2, 0, by + bh/2);
+  g.addColorStop(0, "#ff4a5d"); g.addColorStop(.4, "#e3122f"); g.addColorStop(1, "#7c0517");
+  x.save(); x.shadowColor = "rgba(255,49,72,.8)"; x.shadowBlur = 40; x.fillStyle = g; x.fillRect(0, by - bh/2, W, bh); x.restore();
+
+  var p = new Path2D(MAP), s = mapW / 1000;
+  x.save(); x.translate(cx - mapW/2, cy - mapW * .818 / 2); x.scale(s, s);
+  var fg = x.createLinearGradient(0, 0, 300, 818);
+  fg.addColorStop(0, "#2f8a4f"); fg.addColorStop(.5, "#17602f"); fg.addColorStop(1, "#0b3d1d");
+  x.shadowColor = "rgba(61,255,143,.9)"; x.shadowBlur = 60; x.fillStyle = fg; x.fill(p);
+  x.shadowBlur = 30; x.lineJoin = "round"; x.strokeStyle = "#3dff8f"; x.lineWidth = 10; x.stroke(p);
+  x.shadowBlur = 0; x.strokeStyle = "#d9ffe9"; x.lineWidth = 3; x.stroke(p); x.restore();
+}
+function drawSeal(x, img, cx, cy, r){
+  x.save(); x.translate(cx, cy); x.rotate(-.17);
+  if(img) x.drawImage(img, -r, -r, 2*r, 2*r);
+  x.fillStyle = "rgba(255,232,224,.93)"; x.textAlign = "center"; x.textBaseline = "middle";
+  x.font = (r * .19) + "px Lalezar, Tajawal";
+  x.fillText("السعودية", 0, -r * .62); x.fillText("خط أحمر", 0, r * .62);
+  x.font = (r * .26) + "px Lalezar, Tajawal"; x.fillText("عهد", 0, -r * .14);
+  x.fillRect(-r * .36, r * .05, r * .72, r * .09);
+  x.font = (r * .2) + "px Lalezar, Tajawal"; x.fillText("ولاء", 0, r * .3);
+  x.restore();
+}
+function greenBg(x, W, H){
+  var g = x.createRadialGradient(W/2, H*.4, 50, W/2, H*.45, H*.8);
+  g.addColorStop(0, "#2f6a3c"); g.addColorStop(.5, "#1b4d2b"); g.addColorStop(1, "#082615");
+  x.fillStyle = g; x.fillRect(0, 0, W, H);
+}
+
+function makeDocImage(){
+  return Promise.all([
+    load("assets/scroll-top.webp"),
+    load("assets/scroll-mid.webp"),
+    load("assets/scroll-bot.webp"),
+    load("assets/seal.webp")
+  ]).then(function(a){
+    var W = 1080, H = 1580, cv = document.createElement("canvas");
+    cv.width = W; cv.height = H; var x = cv.getContext("2d");
+    greenBg(x, W, H);
+    var sx = 50, sw = W - 100, topH = sw * 160 / 760, botH = sw * 149 / 760;
+    if(a[0]) x.drawImage(a[0], sx, 24, sw, topH);
+    if(a[1]) x.drawImage(a[1], sx + 18, 24 + topH - 2, sw - 36, H - 48 - topH - botH + 4);
+    if(a[2]) x.drawImage(a[2], sx, H - 24 - botH, sw, botH);
+
+    x.direction = "rtl"; x.textAlign = "center"; x.fillStyle = "#5a1a0f";
+    var y = 24 + topH + 75;
+    x.font = "700 70px 'Aref Ruqaa', Amiri, serif"; x.fillText("وثيقة العهد والولاء", W/2, y);
+    y += 70; x.font = "56px Lalezar, Tajawal"; x.fillStyle = "#e3122f";
+    x.fillText("السعودية خط أحمر", W/2, y);
+    x.fillRect(W/2 - 220, y + 20, 440, 8);
+
+    y += 95; x.textAlign = "right"; x.fillStyle = "#3a2412";
+    var R = W - 140, mw = W - 280;
+    var body = pledgeText.points.map(function(t, i){ return (i===0?t:"وَ"+t).replace(/\.$/,""); }).join("، ") + ".";
+    x.font = "31px Amiri, serif";
+    y = wrapText(x, pledgeText.intro + " " + body, R, y, mw, 54);
+
+    y += 28; x.textAlign = "center"; x.font = "700 38px Amiri, serif"; x.fillStyle = "#5a1a0f";
+    x.fillText("﴿رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا﴾", W/2, y);
+
+    var sy = H - 24 - botH - 160;
+    x.textAlign = "right"; x.fillStyle = "#7a5a3a"; x.font = "26px Tajawal, sans-serif";
+    x.fillText("الموقّعة:", R, sy - 60);
+    x.fillStyle = "#1f2f6b"; x.font = "700 60px 'Aref Ruqaa', Amiri, serif";
+    x.fillText(signed.name, R, sy + 10);
+
+    x.strokeStyle = "#9b7b55"; x.setLineDash([10, 8]); x.lineWidth = 2;
+    x.beginPath(); x.moveTo(R, sy + 30); x.lineTo(R - 480, sy + 30); x.stroke(); x.setLineDash([]);
+
+    x.fillStyle = "#7a5a3a"; x.font = "24px Tajawal, sans-serif";
+    x.fillText("مدرسة الجربة المتوسطة للبنات · " + dateStr(signed.date), R, sy + 74);
+    x.fillText("بإشراف: مديرة مدرسة الجربة المتوسطة للبنات", R, sy + 110);
+
+    drawSeal(x, a[3], 230, sy - 6, 115);
+    return cv.toDataURL("image/jpeg", .90);
+  });
+}
+
+function makeStatusImage(){
+  return Promise.all([
+    load("assets/girl-proud.webp"),
+    load("assets/seal.webp")
+  ]).then(function(a){
+    var W = 1080, H = 1920, cv = document.createElement("canvas");
+    cv.width = W; cv.height = H; var x = cv.getContext("2d");
+    greenBg(x, W, H);
+    drawEmblem(x, W/2, 410, 620, W);
+
+    x.direction = "rtl"; x.textAlign = "center";
+    x.font = "140px Lalezar, Tajawal"; x.lineJoin = "round"; x.lineWidth = 28; x.strokeStyle = "#12030a";
+    x.shadowColor = "rgba(0,0,0,.6)"; x.shadowBlur = 20; x.shadowOffsetY = 8;
+    x.strokeText("السعودية خط أحمر", W/2, 840);
+    x.shadowBlur = 0; x.shadowOffsetY = 0; x.fillStyle = "#ff3148";
+    x.fillText("السعودية خط أحمر", W/2, 840);
+
+    x.fillStyle = "#fff"; x.font = "700 40px Tajawal, sans-serif";
+    x.fillText("مدرسة الجربة المتوسطة للبنات", W/2, 920);
+
+    if(a[0]){
+      var ch = 680, cw = ch * a[0].width / a[0].height;
+      if(cw > W * .8){ cw = W * .8; ch = cw * a[0].height / a[0].width; }
+      x.save(); x.shadowColor = "rgba(61,255,143,.6)"; x.shadowBlur = 50;
+      x.drawImage(a[0], W/2 - cw/2, 1680 - ch - 30, cw, ch); x.restore();
+      x.strokeStyle = "#3dff8f"; x.lineWidth = 6; x.shadowColor = "#3dff8f"; x.shadowBlur = 24;
+      x.beginPath(); x.ellipse(W/2, 1650, W * .36, 46, 0, 0, Math.PI * 2); x.stroke(); x.shadowBlur = 0;
+    }
+
+    x.fillStyle = "rgba(4,26,16,.88)"; x.fillRect(0, 1710, W, 210);
+    x.fillStyle = "#fff"; x.font = "700 42px Tajawal, sans-serif";
+    x.fillText("وقّعتُ وثيقة العهد والولاء للوطن 🇸🇦", W/2, 1775);
+    x.fillStyle = "#f2c24c"; x.font = "700 62px 'Aref Ruqaa', Amiri, serif";
+    x.fillText(signed.name, W/2, 1860);
+
+    drawSeal(x, a[1], W - 170, 1070, 110);
+    return cv.toDataURL("image/jpeg", .88);
+  });
+}
+
+function renderMine(){
+  var box = $("#mineBox");
+  if(!signed){
+    box.innerHTML = '<span class="pill">وثيقتي</span><h2 class="title">وثيقتي <span class="r">المختومة</span></h2><p class="say">وقّعي وثيقة العهد أولاً، وستظهر هنا وثيقتكِ الرسمية المختومة باسمكِ وبطاقة حالة الواتساب الجاهزة للنشر والتحميل.</p><button class="btn btn-red" type="button" data-go="pledge">وقّعي الوثيقة الآن</button>';
+    return;
+  }
+  box.innerHTML = '<span class="pill">وثيقتي</span><h2 class="title">وثيقتي <span class="r">المختومة</span></h2><p class="done-note">مبارك يا ابنة الوطن <b>' + esc(signed.name) + '</b> 🇸🇦</p>' +
+    '<div class="mine-row">' +
+      '<div class="mine-col">' +
+        '<img id="docImg" alt="وثيقة العهد المختومة">' +
+        '<a id="docDl" class="dl-btn" download="وثيقة_العهد_مدرسة_الجربة.jpg">⬇ تحميل وثيقة العهد</a>' +
+      '</div>' +
+      '<div class="mine-col">' +
+        '<img id="stImg" alt="بطاقة حالة الواتساب">' +
+        '<a id="stDl" class="dl-btn" download="حالة_الواتساب_السعودية_خط_أحمر.jpg">⬇ تحميل بطاقة الواتساب</a>' +
+      '</div>' +
+    '</div>' +
+    '<p class="note" style="margin-top:10px">يمكنكِ حفظ الصور مباشرة أو مشاركتها على وسائل التواصل الاجتماعي وحالة الواتساب فخراً واعتزازاً بوطننا الغالي.</p>';
+
+  var ready = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+  ready.then(function(){
+    return Promise.all([makeDocImage(), makeStatusImage()]);
+  }).then(function(r){
+    var d = $("#docImg"), s = $("#stImg");
+    var dlD = $("#docDl"), dlS = $("#stDl");
+    if(d){ d.src = r[0]; if(dlD) dlD.href = r[0]; }
+    if(s){ s.src = r[1]; if(dlS) dlS.href = r[1]; }
+  }).catch(function(){});
+}
+
+var tt;
+function toast(m){
+  var t = $("#toast"); t.textContent = m; t.classList.add("on");
+  clearTimeout(tt); tt = setTimeout(function(){ t.classList.remove("on"); }, 3600);
+}
+
+function init(){
+  $$(".rect[data-bg]").forEach(function(b){ b.style.backgroundImage = "url(assets/bg-" + b.getAttribute("data-bg") + ".webp)"; });
+  $$(".backdrop[data-bg]").forEach(function(b){ b.style.backgroundImage = "url(assets/bg-" + b.getAttribute("data-bg") + ".webp)"; });
+  $("#soldiers").style.backgroundImage = "url(assets/bg-soldiers.webp)";
+  $("#introSoldiers").style.backgroundImage = "url(assets/bg-soldiers.webp)";
+  $("#bhero").style.backgroundImage = "url(assets/bg-soldiers.webp)";
+
+  renderDocLines();
+  ticker();
+  paintCounts(false);
+  renderRules();
+  renderRumors();
+  renderWall();
+  renderMine();
+  paintHome();
+
+  typeSay($("#pledgeSay"), signed ?
+    "تمّ عهدكِ… <em>مدرسة الجربة ووطنكِ يفخران بكِ</em>" :
+    "هذا عهدي لوطني الغالي… <em>وقّعي معي</em> وكوني جزءاً من الخط الأحمر");
+  typeSay($("#rumorSay"), "هل تعلمين أن <em>رسالة واحدة غير موثوقة</em> قد تخدم أعداء الوطن؟ قفي بالمرصاد!");
+  typeSay($("#shareSay"), "ارفعي <em>صورة ولاء</em> أو شاركي <em>رسالة فخر</em> لوطنكِ وقيادتكِ");
+
+  if(signed) restoreSigned();
+}
+
+init();
+})();
+</script>
+</body>
+</html>
